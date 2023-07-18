@@ -5,7 +5,8 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/hello_world/src/Main.java"
+    "code/Main.java"
+
   ],
   "video": ""
 }
