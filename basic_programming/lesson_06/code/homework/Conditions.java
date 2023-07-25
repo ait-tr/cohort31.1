@@ -9,6 +9,11 @@ public class Conditions {
 //        int a = 4 ,  int b = 10  -> true
 //        int a = 4 ,  int b = 3   -> false
 
+        int a, b;
+        a = 4;
+        b = 3;
 
+        boolean var_boolean = (a == 10) || (b == 10) || (a + b == 10);
+        System.out.println(var_boolean);
     }
 }

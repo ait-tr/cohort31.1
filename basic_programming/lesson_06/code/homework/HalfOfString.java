@@ -6,6 +6,5 @@ public class HalfOfString {
 //        Пример: есть Hell , результат He
 
 
-
     }
 }

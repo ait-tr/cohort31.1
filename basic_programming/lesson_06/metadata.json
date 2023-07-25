@@ -5,8 +5,14 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/homework/src/Homework.java",
-    "code/our_boolean/src/Main.java"
+    "code/homework/Conditions.java",
+    "code/practicum/AbsNumber.java",
+    "code/practicum/Calculator.java",
+    "code/practicum/EvenOrOddNumber.java",
+    "code/practicum/NegativeOrPositive.java",
+    "code/practicum/RandomGame.java",
+    "code/practicum/Triangle.java"
+
   ],
   "video": ""
 }
