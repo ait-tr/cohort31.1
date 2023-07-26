@@ -1,4 +1,4 @@
-public class Main {
+public class Main2 {
 
     // цикл While
 

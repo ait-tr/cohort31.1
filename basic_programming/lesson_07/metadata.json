@@ -4,7 +4,9 @@
   "homework": "homework.md",
   "code": [
     "code/homework07/src/Main.java",
-    "code/while_loop/src/Main.java"
+    "code/while_loop/src/Main.java",
+    "code/consultation/Digits"
+
   ],
   "video": ""
 }
