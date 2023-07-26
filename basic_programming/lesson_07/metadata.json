@@ -3,7 +3,7 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/consultation/Digits",
+    "code/consultation/Digits.java",
     "code/homework07/src/Main1.java",
     "code/while_loop/src/Main2.java"
 
