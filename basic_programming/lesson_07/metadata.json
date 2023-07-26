@@ -3,9 +3,9 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
+    "code/consultation/Digits",
     "code/homework07/src/Main1.java",
-    "code/while_loop/src/Main2.java",
-    "code/consultation/Digits"
+    "code/while_loop/src/Main2.java"
 
   ],
   "video": ""
