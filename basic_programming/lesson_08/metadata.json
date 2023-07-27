@@ -3,9 +3,11 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/consultation/Digits.java",
-    "code/homework07/src/Main1.java",
-    "code/while_loop/src/Main2.java"
+    "code/hw_7/MultiplyN.java",
+    "code/hw_7/Power3.java",
+    "code/practicum/Marks.java",
+    "code/practicum/MinElAndIndex.java",
+    "code/practicum/RandomArray.java"
 
   ],
   "video": ""
