@@ -16,7 +16,7 @@ public class RandomArray {
         int i = 0; // индекс
 
         while (i < randomArray.length) {
-            randomArray[i] = (int) (Math.random()*(b - a +1) +a); // заполнение случайными числами
+            int n = (int)((Math.random() * (b - a)) + a); // заполнение случайными числами
             System.out.print(randomArray[i] + " | ");
             i++;
         }
