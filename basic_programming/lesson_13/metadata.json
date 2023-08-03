@@ -3,8 +3,12 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-   "code/homework12/src/Main.java",
-   "code/methods12/src/Main.java"
+   "code/hw_12/Array.java",
+   "code/hw_12/Array1.java",
+   "code/hw_12/Hello.java",
+   "code/practice/Coin.java",
+   "code/practice/Garbage.java",
+   "code/practice/MoneyOnAccount.java"
 
   ],
 
