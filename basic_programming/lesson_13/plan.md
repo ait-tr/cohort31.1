@@ -1,3 +1,41 @@
+# Lesson plan No. 13 of 08/03/2023
+
+1. Discussion of homework:
+   -Hello->EL
+- checkOnesAndZeros( int[] ints)
+- a method that takes an array of integers and a number and finds the index of this number (element) in the array
+
+2. Accumulated knowledge -
+   see section Theory
+
+3. Methods with arguments and return
+
+4. Practice:
+
+Task 1.
+Implement a method that receives as input the deposit amount, the interest rate, and the number of days
+and returns the accumulated income.
+Calculation formula: https://www.raiffeisen.ru/wiki/kak-rasschitat-procenty-po-vkladu/
+
+Task 2.
+Write methods that implement the simulation:
+- tossing a coin
+- target shooting (var 1 - hit/miss, var 2 - result from 0 to 10)
+  The number of attempts is fed to the input of the methods, the method must return the results of the attempts.
+
+Task 3.
+Write a method that receives as input the type of garbage thrown (a word), and returns
+the color of the urn in which it is to be thrown. Test the method by calling it in the main method.
+
+Task 4.
+Implement a method that displays all divisors of an integer entered by the user.
+
+Task 5.
+Write a method to determine if a number is prime.
+
+___________________________________________________
+
+
 # План урока № 13 от 03.08.2023
 
 1. Обсуждение ДЗ:
