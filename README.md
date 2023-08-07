@@ -1,4 +1,4 @@
-To see how the lesson will look like:
+ To see how the lesson will look like:
 - go to lesson.html and press the icon of browser where you want to see the page
 - add to the path in the browser following string (don't forget to modify `lesson_example` with the required lesson)
   `&file=/basic_programming/lesson_example/metadata.json`
