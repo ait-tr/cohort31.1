@@ -1,0 +1,17 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+"code/dz1/src/Main.java",
+"code/dz1/src/NumbersHandler.java",
+"code/dz1/src/NumbersReader.java",
+"code/dz1/src/SmartArray.java",
+"code/dz2/src/Cart.java",
+"code/dz2/src/Main.java",
+"code/dz2/src/Product.java",
+"code/dz2/src/StaticDemo.java"
+ ],
+
+  "video": ""
+}
