@@ -19,6 +19,10 @@ public class Main {
                 new Product("product title 8", 8.6),
         };
 
+        for (Product product:array){
+            System.out.println(product);
+        }
+
         Cart cart = new Cart();
         cart.add(array[0]);
         cart.add(array[2]);

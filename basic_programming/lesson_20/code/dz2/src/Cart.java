@@ -46,13 +46,12 @@ public class Cart {
 
 
     public void remove(int index){
-        if(index>0 && index<size){
+        if(index>=0 && index<size){
             for (int i=index+1; i<size; i++){
                 arr[i-1] = arr[i];
             }
             size--;
         }
-
     }
 
     public void removeById(int id){

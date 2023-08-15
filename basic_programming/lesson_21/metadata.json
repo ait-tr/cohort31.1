@@ -3,14 +3,14 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-"code/dz1/src/Main.java",
-"code/dz1/src/NumbersHandler.java",
-"code/dz1/src/NumbersReader.java",
-"code/dz1/src/SmartArray.java",
-"code/dz2/src/Cart.java",
-"code/dz2/src/Main.java",
-"code/dz2/src/Product.java",
-"code/dz2/src/StaticDemo.java"
+"code/array/src/Arrays.java",
+"code/array/src/Main.java",
+"code/demo2/src/Main.java",
+"code/singleton/src/Main.java",
+"code/singleton/src/Singleton.java",
+"code/singleton/src/Singleton2.java",
+"code/student/src/Main.java",
+"code/student/src/Student.java"
  ],
 
   "video": ""
