@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Student {
     private String name;
     private static int questionsCounter;
