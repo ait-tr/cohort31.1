@@ -1,0 +1,16 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+"code/array/src/Arrays.java",
+"code/array/src/Main.java",
+"code/Inheritance_demo/src/Employee.java",
+"code/Inheritance_demo/src/Main.java",
+"code/Inheritance_demo/src/Programmer.java",
+"code/Inheritance_demo/src/QAEngineer.java",
+"code/Inheritance_demo/src/SupportEngineer.java"
+ ],
+
+  "video": ""
+}
