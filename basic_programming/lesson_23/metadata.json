@@ -3,13 +3,20 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-"code/array/src/Arrays.java",
-"code/array/src/Main.java",
-"code/Inheritance_demo/src/Employee.java",
-"code/Inheritance_demo/src/Main.java",
-"code/Inheritance_demo/src/Programmer.java",
-"code/Inheritance_demo/src/QAEngineer.java",
-"code/Inheritance_demo/src/SupportEngineer.java"
+"code/eShop_associate/src/Aliment.java",
+"code/eShop_associate/src/Cart.java",
+"code/eShop_associate/src/Clothes.java",
+"code/eShop_associate/src/Electronics.java",
+"code/eShop_associate/src/Main.java",
+"code/eShop_associate/src/Product.java",
+"code/homework22/eShop/src/Aliment.java",
+"code/homework22/eShop/src/Cart.java",
+"code/homework22/eShop/src/Clothes.java",
+"code/homework22/eShop/src/Electronics.java",
+"code/homework22/eShop/src/Main.java",
+"code/homework22/eShop/src/Product.java",
+"code/object_demo/src/Main.java",
+"code/object_demo/src/Person.java"
  ],
 
   "video": ""
