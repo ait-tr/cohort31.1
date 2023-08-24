@@ -1,0 +1,12 @@
+{
+	"plan": "plan.md",
+	"theory": "theory.md",
+	"homework": "homework.md",
+	"code": [
+		"code/src/homeworks/FigureAppl.java",
+		"code/src/homeworks/Shape.java",
+		"code/src/homeworks/Circle.java",
+		"code/src/homeworks/Square.java",
+		"code/src/homeworks/Triangle.java"
+	]
+}
