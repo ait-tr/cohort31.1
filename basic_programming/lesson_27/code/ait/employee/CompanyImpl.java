@@ -1,8 +1,4 @@
-package ait.employee.dao;
-
-import ait.employee.model.Employee;
-
-import java.io.Serializable;
+package ait.employee;
 
 public class CompanyImpl implements Company {
     private Employee[] employees;

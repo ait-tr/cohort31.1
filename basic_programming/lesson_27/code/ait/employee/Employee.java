@@ -1,4 +1,4 @@
-package ait.employee.model;
+package ait.employee;
 
 public abstract class Employee {
     protected final int id;

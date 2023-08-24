@@ -1,11 +1,5 @@
-package ait.employee.test;
+package ait.employee;
 
-import ait.employee.dao.Company;
-import ait.employee.dao.CompanyImpl;
-import ait.employee.model.Employee;
-import ait.employee.model.Manager;
-import ait.employee.model.SalesManager;
-import ait.employee.model.WageEmployee;
 import org.junit.jupiter.api.BeforeEach;
 
 import static org.junit.jupiter.api.Assertions.*;

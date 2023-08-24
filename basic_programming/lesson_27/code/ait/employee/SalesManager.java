@@ -1,4 +1,4 @@
-package ait.employee.model;
+package ait.employee;
 
 public class SalesManager extends Employee {
     private double salesValue;

@@ -1,6 +1,4 @@
-package ait.employee.dao;
-
-import ait.employee.model.Employee;
+package ait.employee;
 
 public interface Company {
     boolean addEmployee(Employee employee);
