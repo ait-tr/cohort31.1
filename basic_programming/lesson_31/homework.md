@@ -1,9 +1,9 @@
-**Задача 1**
+**Task 1**
 
 Write OddEvenComparator implementing Comparator with the method compare for sorting an array of Integers in the order:
 The even integers should go before odd numbers.
 
-**Задача 2 (advanced)**
+**Task 2 (advanced)**
 
 Update OddEvenComparator with the method compare for sorting an array of Integers in the order: 
 The even integers should go before odd numbers  in the ascending order . 
