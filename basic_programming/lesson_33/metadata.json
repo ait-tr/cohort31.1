@@ -3,9 +3,10 @@
 	"theory": "theory.md",
 	"homework": "homework.md",
 	"code": [
-		"code/src/DateSortTest.java",
-		"code/src/WardrobeTest.java",
-		"code/src/Wardrobe.java",
-		"code/src/homeworks/OddEvenComparatorTest.java"
+		"code/books/dao/Library.java",
+		"code/books/dao/LibraryImpl.java",
+		"code/books/model/Book.java",
+		"code/books/LibraryAppl.java"
+
 	]
 }
