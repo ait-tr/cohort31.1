@@ -6,6 +6,7 @@
 		"code/src/City.java",
 		"code/src/CityTest.java",
 		"code/src/CompanyArraysImpl.java",
-		"code/src/homeworks/DateSortTest.java"
+		"code/src/homeworks/DateSortTest.java",
+		"code/src/homeworks/CompanyArraysImpl.java"
 	]
 }
