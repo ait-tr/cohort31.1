@@ -1,14 +1,8 @@
-import java.util.Iterator;
-
 public class OurLinkedList<E> implements OurList<E> {
-
-//}, Iterator<E>  {
 
     private int size;
     private Node<E> first;
     private Node<E> last;
-
-    private Node<E> activeNode;
 
     public OurLinkedList() {
 
@@ -83,99 +77,41 @@ public class OurLinkedList<E> implements OurList<E> {
         return false;
     }
 
-    public E removeById(int index){
-        Node<E> deletedNode = getNodeByIndex(index);
-        if(deletedNode!=null){   //
-            E value = deletedNode.value;
-            Node<E> prev = deletedNode.prev;
-            Node<E> next = deletedNode.next;
-            if (prev==null && next == null){  //  only one element in list
-                first = null;
-                last=null;
-                size=0;
-                return deletedNode.value;
-            }
-            if(prev!=null){    // not first element
-                prev.next = next;
-            } else {
-                first = next;
-                first.prev=null;
-            }
-
-            if(next!=null){   // not last element
-                next.prev = prev;
-            } else {
-                last = prev;
-                last.next=null;
-            }
-            size--;
-
-
-            return  value;
-        } else {
-            return null;
-        }
-    }
-
-
-
-    public void print(){
-        Node<E> currentNode=first;
-        while (currentNode!=null){
-            System.out.println(currentNode.value);
-            currentNode=currentNode.next;
-        }
-    }
-
-
-
     @Override
-    public Iterator<E> iterator() {
-        return new Iterator<E>() {
-            Node<E> activeNode=first;
-            @Override
-            public boolean hasNext() {
-                return activeNode!=null ;
-            }
-
-            @Override
-            public E next() {
-                if(hasNext()) {
-                    E value = activeNode.value;
-                    activeNode=activeNode.next;
-                    return value;
-                } else {
-                    return null;
+    public E removeById(int index) {
+        Node<E> deletedNode = getNodeByIndex(index);
+        if (deletedNode!=null) {
+            E value = deletedNode.value;
+            if (deletedNode == first){
+               first = deletedNode.next;
+               if (deletedNode.next!=null) {
+                   deletedNode.next.prev = null;
                 }
             }
-        };
-    }
+            if(deletedNode==last){
+                last = deletedNode.prev;
+                if(deletedNode.prev!=null){
+                    deletedNode.prev.next=null;
+                }
+            }
+            if(deletedNode!=first && deletedNode!=last) {
+                deletedNode.next.prev = deletedNode.prev;
+                deletedNode.prev.next = deletedNode.next;
+                deletedNode.prev=null;
+                deletedNode.next=null;
+                deletedNode.value=null;
+            }
 
 
 
-/*
-    public  Iterator<E> iterator(){
-        activeNode = first;
-        return this;
-    }
-    @Override
-    public boolean hasNext() {
-        return activeNode!=null;
-    }
-
-    @Override
-    public E next() {
-        if(hasNext()) {
-            E value = activeNode.value;
-            activeNode=activeNode.next;
-            return value;
-        } else {
-            return null;
+        return value;
         }
 
+        return null;
     }
 
-*/
+
+
     private static class Node<E> {
         Node<E> prev;
 
@@ -189,8 +125,6 @@ public class OurLinkedList<E> implements OurList<E> {
             this.prev = prev;
             this.value = value;
         }
-
-
 
 
     }

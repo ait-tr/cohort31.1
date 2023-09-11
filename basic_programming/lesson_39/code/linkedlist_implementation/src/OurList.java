@@ -1,5 +1,5 @@
-public interface OurList<E> extends Iterable<E>{
-
+public interface OurList<E>{
+        //extends Iterable<E> {
 
     void append(E o);
 
