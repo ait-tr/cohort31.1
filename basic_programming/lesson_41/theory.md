@@ -1,6 +1,6 @@
 [Внутренняя работа HashMap в Java](https://habr.com/ru/articles/421179/)  
 [HashMap](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/HashMap.html)    
-[Internal Working of HashMap in Java](Internal Working of HashMap in Java)  
+[Internal Working of HashMap in Java](https://www.geeksforgeeks.org/internal-working-of-hashmap-java/)  
 
 
 
