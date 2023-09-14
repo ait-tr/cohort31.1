@@ -57,7 +57,7 @@ public class Main {
         map3.put(person,person.getAge());
         System.out.println(map3);
 
-        map1.
+
 
 
     }
