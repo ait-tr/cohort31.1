@@ -25,7 +25,7 @@ public class Main {
 
 
 
-        
+
         Set<Person> set2= new TreeSet<>(
                 (p1,p2) -> p1.getName().compareTo(p2.getName())
         );

@@ -4,11 +4,13 @@
   "homework": "homework.md",
   "code": [
 
-"code/demo20230913_1/src/Main.java",
-"code/demo20230913_1/src/Person.java",
-"code/map_20230913/src/Main.java",
-"code/map_20230913/src/Person.java",
-"code/map_20230913/src/qwe.java"
+"code/demo20230914_tree1/src/Main.java",
+"code/demo20230914_tree1/src/Person.java",
+"code/dz20230914_1/src/Main.java",
+"code/dz20230914_2/src/Main.java",
+"code/dz20230914_2/src/Student.java",
+"code/task20230914_1/src/Main.java",
+"code/task20230914_1/src/Student.java"
     ],
   "video": ""
 }
