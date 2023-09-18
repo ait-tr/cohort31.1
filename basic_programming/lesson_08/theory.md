@@ -12,7 +12,7 @@
 * An array can contain data of **ONLY ONE type**.
 * The type of what is stored in the array is the types of variables that we have in the language, there are no others.
 
-**Main characteristics of the array:**
+**Main2 characteristics of the array:**
 - **type** of data placed in it (int, double, String, boolean, long ...),
 - name (as VariableName ),
 - length (natural number, cannot be negative) = array size (number of cells, length)
