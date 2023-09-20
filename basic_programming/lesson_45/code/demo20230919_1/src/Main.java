@@ -21,7 +21,7 @@ public class Main {
         Deque<String> stack = new ArrayDeque<>();
         stack.push("s1");
         stack.push("s2");
-        stack.push("s3");
+        stack.push("s3  ");
         System.out.println(stack);
         System.out.println("pop " + stack.pop());
         System.out.println(stack);
