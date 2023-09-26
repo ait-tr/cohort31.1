@@ -7,5 +7,7 @@ public class Car {
         this.brand = brand;
         this.plate = plate;
         this.color = color;
+
+
     }
 }

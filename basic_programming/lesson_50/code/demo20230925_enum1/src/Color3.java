@@ -6,6 +6,7 @@ public enum Color3 {
 
     private int intValue;
     private String stringValue;
+    private Object obj;
 
     Color3(int intValue, String stringValue) {
         this.intValue = intValue;
