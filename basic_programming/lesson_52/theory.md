@@ -1,3 +1,43 @@
+**try-with-resources**
+
+The try-with-resources statement is a try statement that declares one or more resources.   
+A *resource* is an object that must be closed after the program is finished with it. 
+The try-with-resources statement ensures that each resource is closed at the end of the statement. 
+Any object that implements java.lang.AutoCloseable, which includes all objects which implement java.io.Closeable, can be used as a resource.
+
+The following example reads file. It uses an instance of FileReader to read data from the file. FileReaderare is resource that must be closed after the program is finished with it:
+```java
+	static void readFirstLineFromFile(String path) throws IOException {
+	    try (FileReader fr = new FileReader(path);){
+	         while ((data=fr.read())!=-1){
+                	System.out.print((char)data);
+            	}  
+	    }
+	}
+```	 
+
+
+
+**try-with-resources**
+
+try-with-resources Ч это оператор try, который объ€вл€ет один или несколько ресурсов.
+*–есурс* Ч это объект, который необходимо закрыть после завершени€ работы программы.  try-with-resources гарантирует, что каждый ресурс будет закрыт в конце оператора.
+¬ качестве ресурса можно использовать любой объект, реализующий java.lang.AutoCloseable, включа€ все объекты, реализующие java.io.Closeable.
+
+¬ следующем примере читаем файл, использу€ экземпл€р FileReader дл€ чтени€ данных из файла. FileReaderare Ч это ресурс, который необходимо закрыть после завершени€ работы программы:
+
+```java
+	static void readFirstLineFromFile(String path) throws IOException {
+	    try (FileReader fr = new FileReader(path);){
+	         while ((data=fr.read())!=-1){
+                	System.out.print((char)data);
+            	}  
+	    }
+	}
+```	 
+
+
+
 **Input-Output Streams. File Handling**
 
 A distinguishing feature of many programming languages is their ability to work with files and streams. In Java, the core functionality for working with streams is concentrated in classes from the java.io package.
@@ -15,6 +55,7 @@ However, working with bytes is not very convenient, so abstract classes Reader (
 All other classes working with streams are descendants of these abstract classes.
 
 
+**try-with-resources**
 
 
 ***ѕотоки ввода-вывода. –абота с файлами***  
