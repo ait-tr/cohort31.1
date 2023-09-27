@@ -1,3 +1,5 @@
+import java.util.Comparator;
+
 public class Main {
     /*
     Давайте вспомним задачу про робота и его фиксированный набор команд (см.урок 46) Ваша задача реализовать класс робот.
@@ -17,5 +19,7 @@ public class Main {
     public static void main(String[] args) {
         Robot robot = new Robot("СЮЩЗlk;Jh;hsadСС");
         robot.printCommands();
+
+
     }
 }

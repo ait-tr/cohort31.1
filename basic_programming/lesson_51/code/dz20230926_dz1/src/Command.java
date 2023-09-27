@@ -24,11 +24,15 @@ public enum Command {
         public boolean isOpposite(Command command) {
             return command==Command.В;
         }
+
+
+
     };
 
     Command(String pathDysplayString) {
         this.pathDysplayString = pathDysplayString;
     }
+
 
     public String getPathDysplayString() {
         return pathDysplayString;
@@ -36,6 +40,10 @@ public enum Command {
 
     public abstract boolean isOpposite(Command command);
     private String pathDysplayString;
+
+    public void print(){
+        System.out.println("qwerty" + name());
+    }
 
 
 }
