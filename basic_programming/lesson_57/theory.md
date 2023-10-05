@@ -7,9 +7,6 @@ The core of a lambda expression is the lambda operator, which is represented by 
 
 A lambda expression doesn't execute by itself; instead, it forms an implementation of a method defined in a functional interface. It is important to note that the functional interface should contain only a single method without an implementation.
 
-***Method Reference***  
-Starting from JDK 8 in Java, you can pass a reference to another method as a parameter to a method. In principle, this approach is similar to passing lambda expressions as parameters.
-
 
 ***Built-in Functional Interfaces***  
 In JDK 8, along with the functionality of lambda expressions, a number of built-in functional interfaces were also added, which we can use in various situations and in different APIs. In particular, in the Stream API, which is an application interface for working with data, the main interfaces include:
