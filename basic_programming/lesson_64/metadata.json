@@ -1,0 +1,16 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "./code/example_01/src/EggThread.java",
+    "./code/example_01/src/HenThread.java",
+    "./code/example_01/src/Main.java",
+    "./code/example_02/src/Main.java",
+    "./code/example_03/src/CreditCard.java",
+    "./code/example_03/src/Human.java",
+    "./code/example_03/src/Main.java",
+    "./code/homework_10_16/src/Main.java",
+    "./code/homework_10_16/src/Violin.java"
+  ]
+}
