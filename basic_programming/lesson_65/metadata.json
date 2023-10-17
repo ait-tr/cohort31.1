@@ -1,0 +1,11 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "./code/homework_10_17/src/Main.java",
+    "./code/homework_10_17/src/Task.java",
+    "./code/homework_10_17-2/src/AchillesThread.java",
+    "./code/homework_10_17-2/src/Main.java"
+  ]
+}
