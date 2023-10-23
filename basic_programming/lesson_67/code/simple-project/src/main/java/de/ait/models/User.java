@@ -1,7 +1,6 @@
 package de.ait.models;
 
 public class User {
-  private String id;
   private String firstName;
   private String secondName;
   private int age;

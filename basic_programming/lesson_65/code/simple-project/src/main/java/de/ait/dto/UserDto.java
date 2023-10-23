@@ -1,7 +1,7 @@
-package de.ait.models;
+package de.ait.dto;
 
-public class User {
-  private String id;
+public class UserDto {
+
   private String firstName;
   private String secondName;
   private int age;
@@ -23,7 +23,7 @@ public class User {
     return height;
   }
 
-  public User(String firstName, String secondName, int age, double height) {
+  public UserDto(String firstName, String secondName, int age, double height) {
     this.firstName = firstName;
     this.secondName = secondName;
     this.age = age;

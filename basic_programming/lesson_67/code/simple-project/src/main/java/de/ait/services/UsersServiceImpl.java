@@ -1,12 +1,10 @@
 package de.ait.services;
 
-import de.ait.dto.UserDto;
 import de.ait.models.User;
 import de.ait.repositories.UsersRepository;
 
 import java.util.List;
 import java.util.NoSuchElementException;
-import java.util.UUID;
 
 public class UsersServiceImpl implements UsersService {
   UsersRepository usersRepository;
@@ -31,17 +29,5 @@ public class UsersServiceImpl implements UsersService {
             .orElseThrow(NoSuchElementException::new)
             .getSecondName();
     return secondName;
-  }
-
-  @Override
-  public void add(UserDto userDto) {
-    User user = new User(
-        UUID.randomUUID().toString(),
-        userDto.getFirstName(),
-        userDto.getSecondName(),
-        userDto.getAge(),
-        userDto.getHeight()
-    );
-    usersRepository.save(user);
   }
 }
