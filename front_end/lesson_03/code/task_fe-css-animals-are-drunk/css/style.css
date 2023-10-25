@@ -1,0 +1,78 @@
+
+/* 
+* {
+  outline: 1px solid red;
+} 
+*/
+
+html {
+  font-size: 14px;
+}
+
+p, h2, a {
+  font-family: 'Lora', serif;
+}
+
+/* main {
+  font-family:Arial, Helvetica, sans-serif;
+} */
+
+/* 
+единицы измерения 
+  Абсолютные:
+  - px - пиксели
+
+  Относительные:
+  - % - процент - от размера родителя
+  - rem - относительно шрифта самого корневого элемента (мы указали html)
+  1 rem === 14px в данном примере
+  - em - относительно размера шрифта. 
+*/
+
+main {
+  width: 800px;
+}
+
+.main-text {
+ /* font-size: 22px; */
+ font-size: 1.5rem;
+ line-height: 1.3em;
+ /* text-indent: 2em; */
+ /* 
+  text-indent - отсуп
+  font-size  - размер шрифта
+  line-height - высота строки - интервал между строк
+  width - ширина 
+  height - высота
+  text-decoration - тип подеркивания - если хотим убрать - ставим none
+  font-weight - жирность/вес bold;
+  font-style - 
+  display   -block -inline
+ */
+}
+
+.headline {
+  font-size: 1.8rem;
+}
+
+img {
+  width: 400px;
+}
+
+a {
+  color: #262626;
+  /* text-decoration:none; */
+}
+
+.idea {
+ font-size: 1.7rem;
+ font-weight: bold;
+ /* font-style: italic; */
+ border-left: solid 3px rgb(123, 20, 20);
+ padding-left: 2rem;
+ display: block;
+}
+
+.red {
+  color: red;
+}
