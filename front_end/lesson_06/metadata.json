@@ -1,0 +1,21 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "./code/bootstrap-demo/style.css",
+    "./code/bootstrap-demo/index.html",
+    "./code/bootstrap-demo/example.html",
+    "./code/task_fe-css-flexbox-header-cinema/example.png",
+    "./code/task_fe-css-flexbox-header-cinema/index.html",
+    "./code/task_fe-css-flexbox-header-cinema/README.md",
+    "./code/task_fe-css-flexbox-header-cinema/style.css",
+    "./code/task_fe-css-position-museum-header/example.png",
+    "./code/task_fe-css-position-museum-header/index.html",
+    "./code/task_fe-css-position-museum-header/logo.svg",
+    "./code/task_fe-css-position-museum-header/README.md",
+    "./code/task_fe-css-position-museum-header/style.css"
+  ],
+  "video": "",
+  "etc": ""
+}
