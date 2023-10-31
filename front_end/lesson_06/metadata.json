@@ -3,13 +3,15 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "./code/bootstrap-demo/style.css",
-    "./code/bootstrap-demo/index.html",
-    "./code/bootstrap-demo/example.html",
-    "./code/task_fe-css-flexbox-header-cinema/index.html",
-    "./code/task_fe-css-flexbox-header-cinema/style.css",
-    "./code/task_fe-css-position-museum-header/index.html",
-    "./code/task_fe-css-position-museum-header/style.css"
+    "./code/example_01/index.html",
+    "./code/example_02/index.js",
+    "./code/example_02/index.html",
+    "./code/example_01/index.js",
+    "./code/example_03/index.html",
+    "./code/example_03/index.js",
+    "./code/example_03/style.css",
+    "./code/example_04/index.html",
+    "./code/example_04/js/index.js"
   ],
   "video": "",
   "etc": ""
