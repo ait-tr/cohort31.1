@@ -1,6 +1,6 @@
 # Методы массивов
 
-- Презентация: [ссылка](https://github.com/ait-tr/cohort24/blob/main/front_end/lesson_11/arrayMethodsAndObjProps.pdf)
+- Презентация: [ссылка](https://github.com/ait-tr/cohort31.1/blob/main/front_end/lesson_11/arrayMethodsAndObjProps.pdf)
 
 ## Метод map()   
 [_узнать больше_](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/map)  
