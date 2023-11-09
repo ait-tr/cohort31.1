@@ -12,7 +12,7 @@
     "./code/homework/recipeAlternative/index.js",
     "./code/homework/recipeAlternative/index.html",
     "./code/promises/index.js",
-    "./code/setInterval/index.html",
+    "./code/setInterval/index.js",
     "./code/setTimeout/index.js"
   ],
   "video": "",
