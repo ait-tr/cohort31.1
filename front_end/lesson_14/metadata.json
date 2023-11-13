@@ -3,7 +3,7 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "./code/async-await/index.jsт",
+    "./code/async-await/index.js",
     "./code/fetch/index.js",
     "./code/fetch/index.html",
     "./code/promise/index.js",

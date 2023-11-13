@@ -7,13 +7,15 @@
 const requestButton = document.getElementById("request-button");
 
 async function getApliacesData() {
+  // Создаем переменную куда кладем наш url
   const apliancesURL = "https://gzavertyaev-dev.github.io/appliances.json";
 
-  // Получаем обьект Response
+  // Получаем обьект Response используя fetch- делая GET запрос
+  // и await - для получения результата
   const response = await fetch(apliancesURL);
-  console.log(response);
-  console.log(response.ok);
-  console.log(response.status);
+  console.log(response); // обьект Response
+  console.log(response.ok); // true или false
+  console.log(response.status); // 200,400,500 и т.д
 
   // OK или не ок - успешно завершен запрос или нет
   if (response.ok) {
@@ -22,6 +24,7 @@ async function getApliacesData() {
     console.log(result);
     console.log(result.products);
 
+    // Далле работаем с полученными данными как мы хотим
     const objWithIdSeven = result.products.find((el) => el.id === 7);
     console.log(objWithIdSeven);
 
@@ -29,8 +32,12 @@ async function getApliacesData() {
     div.textContent = objWithIdSeven.name;
     document.body.append(div);
   } else {
+    // ловим ошибку
     console.log("Some Erorr");
   }
+
+  // Альтернатива - через try...catch - однако catch не ловит все ошибки
+  // в случае с fetch - поэтому нужно все равно явно проверять  if (response.ok) {} else{}
 
   //   try {
   //     const result = await response.json();
