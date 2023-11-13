@@ -1,0 +1,20 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "./code/async-await/index.jsт",
+    "./code/fetch/index.js",
+    "./code/fetch/index.html",
+    "./code/promise/index.js",
+    "./code/homework/task-1/index.html",
+    "./code/homework/task-1/index.js",
+    "./code/homework/task-1/style.css",
+    "./code/homework/task-2/index.html",
+    "./code/homework/task-2/index.js",
+    "./code/homework/task-2/style.css",
+    "./code/homework/task-3/task3.js"
+  ],
+  "video": "",
+  "etc": ""
+}
