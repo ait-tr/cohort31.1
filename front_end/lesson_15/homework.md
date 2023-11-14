@@ -19,7 +19,7 @@
 
 На лекции, мы писали приложение Weather app, ваша задача: используя нами на лекции код, дописать это приложение и довести его до ума:
 
-- нужно сверстать приложение в соотвествии с дизайном: [ссылка](https://www.figma.com/file/fwgYIR4OoE2eC3UGw5ZUWD/Untitled?type=design&node-id=0-1&mode=design&t=UaRIsgYISKex7cdM-0). При этом важно разместить информацию в 1 блоке(где указанна теспература). Дополнительный блок feels like - по желанию и при наличии времени!!!
+- нужно сверстать приложение в соотвествии с дизайном: [ссылка](https://www.figma.com/file/fwgYIR4OoE2eC3UGw5ZUWD/Untitled?type=design&node-id=0-1&mode=design&t=UaRIsgYISKex7cdM-0). При этом важно разместить информацию в 1 блоке(где указанна температура). Дополнительный блок feels like - по желанию и при наличии времени!!!
 - когда вы получите успешный ответ, разместить информацию как на дизайне: [ссылка](https://www.figma.com/file/fwgYIR4OoE2eC3UGw5ZUWD/Untitled?type=design&node-id=1-11&mode=design&t=y3tXzB0YROLuMMdg-0)
 - когда вы получите ошибку - разместить информацию как на дизайне: [ссылка](https://www.figma.com/file/fwgYIR4OoE2eC3UGw5ZUWD/Untitled?type=design&node-id=1-46&mode=design&t=y3tXzB0YROLuMMdg-0)
 
