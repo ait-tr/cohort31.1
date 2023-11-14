@@ -1,0 +1,14 @@
+div {
+    color: blue;
+    margin: 5px;
+  }
+  li {
+    margin: 10px;
+    background-color: wheat;
+    width: 100%;
+    padding: 10px;
+  }
+  ul li {
+    color: red;
+    padding: 0;
+  }

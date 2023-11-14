@@ -1,0 +1,21 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "./code/weather_app/index.html",
+    "./code/weather_app/index.js",
+    "./code/weather_app/styles.css",
+    "./code/homework/task_1/index.html",
+    "./code/homework/task_1/index.js",
+    "./code/homework/task_1/style.css",
+    "./code/homework/task_2/index.html",
+    "./code/homework/task_2.index.js",
+    "./code/homework/task_2/style.css",
+    "./code/homework/textFormats/index.js",
+    "./code/homework/textFormats/note.xml",
+    "./code/homework/textFormats/persons.json"
+  ],
+  "video": "",
+  "etc": ""
+}
