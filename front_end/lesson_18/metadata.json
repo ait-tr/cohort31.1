@@ -4,7 +4,7 @@
   "homework": "homework.md",
   "code": [
     "./code/homework/App.jsx",
-    "./code/homework/ProfileCard/ProfileCard.jsx",
+    "./code/homework/ProfileCard/ProfilCard.jsx",
     "./code/homework/ProfileCard/index.js",
     "./code/homework/ProfileCard/styles.css",
     "./code/useState-and-triggers/App.jsx",
