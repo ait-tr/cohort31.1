@@ -1,4 +1,4 @@
-## React: Styled-components, GlobalStyles, Fragment, Controlled/Uncontrolled components
+## React: Component lifecycle, useEffect(), rendering
 
 - Презентация: [ссылка](https://github.com/ait-tr/cohort31.1/blob/main/front_end/lesson_24/React_useEffect.pdf)
 - Теория: :
