@@ -1,0 +1,19 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "./code/Homework24/Homework24.tsx",
+    "./code/Homework24/index.ts",
+    "./code/Homework24/styles.ts",
+    "./code/Input/index.ts",
+    "./code/Input/Input.tsx",
+    "./code/Input/styles.ts",
+    "./code/Input/types.ts",
+    "./code/Lesson25/index.ts",
+    "./code/Lesson25/Lesson25.tsx",
+    "./code/Lesson25/styles.ts"
+  ],
+  "video": "",
+  "etc": ""
+}
