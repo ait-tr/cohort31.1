@@ -1,4 +1,4 @@
-## React: Routing
+## React: Props drilling, useContext
 
 - Презентация: [ссылка](https://github.com/ait-tr/cohort31.1/blob/main/front_end/lesson_27/React_useContext.pdf)
 - Теория: :
