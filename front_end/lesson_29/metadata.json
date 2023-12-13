@@ -17,7 +17,7 @@
     "./code/Weather/Weather.tsx",
     "./code/Weather/components/WeatherInfo/index.ts",
     "./code/Weather/components/WeatherInfo/styles.ts",
-    "./code/Weather/components/WeatherInfo\types.ts",
+    "./code/Weather/components/WeatherInfo/types.ts",
     "./code/Weather/components/WeatherInfo/WeatherInfo.tsx",
     "./code/Weather/components/WeatherError/index.ts",
     "./code/Weather/components/WeatherError/styles.ts",
