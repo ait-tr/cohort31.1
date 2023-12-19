@@ -9,7 +9,6 @@ import { HomePageWrapper, UserForm, UserFormName } from "./styles"
 
 function Home() {
   const dispatch = useDispatch()
-
   const formik = useFormik({
     initialValues: {
       firstlastName: "",
@@ -21,8 +20,6 @@ function Home() {
       console.log(values)
     },
   })
-
-  console.log(formik)
 
   return (
     <HomePageWrapper>
