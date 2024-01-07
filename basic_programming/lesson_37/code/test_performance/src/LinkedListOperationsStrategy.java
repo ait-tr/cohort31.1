@@ -10,19 +10,19 @@ public class LinkedListOperationsStrategy implements ListOperationsStrategy {
 
     @Override
     public void append(int nTimes) {
-        List list = new LinkedList();
+        List list = new LinkedList(); // создаем новый LinkedList
 
         for (int i = 0; i < nTimes; i++) {
-            list.add(object);
+            list.add(object); // добавляем в LinkedList объект object
         }
     }
 
     @Override
     public List getFilledList(int length) {
-        List list = new LinkedList();
+        List list = new LinkedList(); // создаем новый LinkedList
 
         for (int i = 0; i < length; i++) {
-            list.add(object);
+            list.add(object); // добавляем в LinkedList объект object
         }
         return list;
     }

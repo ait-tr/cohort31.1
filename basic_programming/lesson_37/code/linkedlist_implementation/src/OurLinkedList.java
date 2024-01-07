@@ -30,7 +30,10 @@ public class OurLinkedList<E> implements OurList<E> {
 
     @Override
     public E get(int index) {
+
+        // перебираем узлы листа от 0 до индекса,
         return null;
+
     }
 
     @Override
