@@ -1,8 +1,8 @@
-package practice.budget_tracker;
+package budget_tracker;
 
-import practice.budget_tracker.dao.BudgetImpl;
-import practice.budget_tracker.model.Menu;
-import practice.budget_tracker.model.Purchase;
+import budget_tracker.dao.BudgetImpl;
+import budget_tracker.model.Purchase;
+import budget_tracker.model.Menu;
 
 import java.io.*;
 import java.time.LocalDate;

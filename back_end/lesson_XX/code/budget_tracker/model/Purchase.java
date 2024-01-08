@@ -1,4 +1,4 @@
-package practice.budget_tracker.model;
+package budget_tracker.model;
 
 import java.time.LocalDate;
 import java.util.Objects;

@@ -1,8 +1,8 @@
-package practice.budget_tracker.test;
+package budget_tracker.test;
 
-import practice.budget_tracker.dao.Budget;
-import practice.budget_tracker.dao.BudgetImpl;
-import practice.budget_tracker.model.Purchase;
+import budget_tracker.dao.Budget;
+import budget_tracker.dao.BudgetImpl;
+import budget_tracker.model.Purchase;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
