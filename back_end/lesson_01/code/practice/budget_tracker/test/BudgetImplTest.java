@@ -1,8 +1,8 @@
-package budget_tracker.test;
+package practice.budget_tracker.test;
 
-import budget_tracker.dao.Budget;
-import budget_tracker.dao.BudgetImpl;
-import budget_tracker.model.Purchase;
+import practice.budget_tracker.dao.Budget;
+import practice.budget_tracker.dao.BudgetImpl;
+import practice.budget_tracker.model.Purchase;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -36,7 +36,7 @@ class BudgetImplTest {
     @Test
     void addMoney() {
         assertEquals(1100, monthBudget.addMoney(100.0));
-        assertEquals(1200, monthBudget.addMoney(200));
+        assertEquals(1300, monthBudget.addMoney(200));
     }
 
     @Test

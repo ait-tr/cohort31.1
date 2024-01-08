@@ -1,4 +1,4 @@
-package budget_tracker.model;
+package practice.budget_tracker.model;
 
 public enum Menu {
     SET_BUDGET(1, "Month budget"),

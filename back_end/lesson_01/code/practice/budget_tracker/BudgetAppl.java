@@ -1,18 +1,20 @@
-package budget_tracker;
+package practice.budget_tracker;
 
-import budget_tracker.dao.BudgetImpl;
-import budget_tracker.model.Menu;
-import budget_tracker.model.Purchase;
+import practice.budget_tracker.dao.BudgetImpl;
+import practice.budget_tracker.model.Menu;
+import practice.budget_tracker.model.Purchase;
 
 import java.io.*;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 public class BudgetAppl {
+
+    private static final String FILE_NAME = "back_end/lesson_01/code/practice/budget_tracker/budget-01.csv";
+
     public static void main(String[] args) {
         List<Purchase> purchaseList = new ArrayList<>();
         double budget = 0;
@@ -74,7 +76,7 @@ public class BudgetAppl {
                 case 6 -> {
                     System.out.println("Saving budget...");
                     try {
-                        PrintWriter pw = new PrintWriter(new FileWriter("back_end/lesson_XX/code/budget_tracker/budget-01.csv"));  // создаем поток в файл, true - дописывать
+                        PrintWriter pw = new PrintWriter(new FileWriter(FILE_NAME));  // создаем поток в файл, true - дописывать
                         pw.println("id,store,date,person,amount");
                         for (Purchase p : purchaseList ) {
                             pw.println(p);
@@ -89,11 +91,11 @@ public class BudgetAppl {
                 }
                 case 7 -> {
                     if(budget != 0.0) {
-                        System.out.println("You already load the budget.");
+                        System.out.println("You already set or load the budget.");
                         break;
                     }
                     System.out.println("Loading... ");
-                    try (BufferedReader br = new BufferedReader(new FileReader("back_end/lesson_XX/code/budget_tracker/budget-01.csv"))) {
+                    try (BufferedReader br = new BufferedReader(new FileReader(FILE_NAME))) {
                         String str = br.readLine(); // считали 1-ю строку
                         //System.out.println(str);
                          String[] cells = str.split(",");

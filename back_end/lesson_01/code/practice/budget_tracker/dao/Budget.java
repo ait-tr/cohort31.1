@@ -1,6 +1,6 @@
-package budget_tracker.dao;
+package practice.budget_tracker.dao;
 
-import budget_tracker.model.Purchase;
+import practice.budget_tracker.model.Purchase;
 
 import java.time.LocalDate;
 
