@@ -10,47 +10,71 @@ public class BudgetImpl implements Budget{
 
     // размер бюджета
     double budget;
-
     // список покупок
+    // модификатор,тип, название
+    List<Purchase> purchases = new ArrayList<>(); // обращаемся к пустому конструктору
+
+    // constructor
+    public BudgetImpl(double budget, List<Purchase> purchases) {
+        this.budget = budget;
+        this.purchases = purchases;
+    }
 
     @Override
     public double addMoney(double money) {
-        return 0;
+        return budget += money;
     }
 
     @Override
     public boolean checkBudget() {
-        return false;
+        double res = calcBudget();
+        return res < budget;
     }
 
     @Override
     public boolean addPurchase(Purchase purchase) {
-        return false;
+        if(purchase == null || purchases.contains(purchase)){
+           return false;
+        }
+        return purchases.add(purchase);
     }
 
     @Override
     public double calcBudget() {
-        return 0;
+        return purchases.stream()
+                .mapToDouble(Purchase::getAmount)
+                .sum();
     }
 
     @Override
     public double getBudgetByPerson(String person) {
-        return 0;
+        return purchases.stream()
+                .filter(purchase -> purchase.getPersonName().equalsIgnoreCase(person))
+                .mapToDouble(Purchase::getAmount)
+                .sum();
     }
 
     @Override
-    public double getBudgetByStore(String person) {
-        return 0;
+    public double getBudgetByStore(String store) {
+        return purchases.stream()
+                .filter(purchase -> purchase.getStore().equalsIgnoreCase(store))
+                .mapToDouble(Purchase::getAmount)
+                .sum();
     }
 
     @Override
     public double getBudgetByDate(LocalDate from, LocalDate to) {
-        return 0;
+        return purchases.stream()
+                .filter(purchase -> purchase.getDate().isAfter(from)&&purchase.getDate().isBefore(to))
+                .mapToDouble(Purchase::getAmount)
+                .sum();
     }
 
     @Override
     public double checkMoney() {
-        return 0;
+        double spends = calcBudget();
+        double res = budget - spends;
+        return res;
     }
 
 }

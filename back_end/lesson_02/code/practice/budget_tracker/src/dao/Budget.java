@@ -10,7 +10,7 @@ public interface Budget {
     boolean addPurchase(Purchase purchase);
     double calcBudget();
     double getBudgetByPerson(String person);
-    double getBudgetByStore(String person);
+    double getBudgetByStore(String store);
     double getBudgetByDate(LocalDate from, LocalDate to);
     double checkMoney();
 

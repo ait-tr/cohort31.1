@@ -5,9 +5,13 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/practice/budget_tracker/dao/Budget.java",
-    "code/practice/budget_tracker/dao/BudgetImpl.java",
-    "code/practice/budget_tracker/model/Purchase.java"
+    "code/practice/budget_tracker/src/dao/Budget.java",
+    "code/practice/budget_tracker/src/dao/BudgetImpl.java",
+    "code/practice/budget_tracker/src/model/Menu.java",
+    "code/practice/budget_tracker/src/model/Purchase.java",
+    "code/practice/budget_tracker/src/tests/BudgetImplTest.java",
+    "code/practice/budget_tracker/src/BudgetAppl.java"
+
   ],
   "video": ""
 }
