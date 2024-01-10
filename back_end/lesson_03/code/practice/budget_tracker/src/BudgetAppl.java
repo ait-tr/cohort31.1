@@ -5,9 +5,7 @@ import practice.budget_tracker.src.dao.BudgetImpl;
 import practice.budget_tracker.src.model.Menu;
 import practice.budget_tracker.src.model.Purchase;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -76,6 +74,42 @@ public class BudgetAppl {
                      double checkMoney = monthBudget.checkMoney();
                      System.out.println("Rest of the budget is: " + checkMoney);
                  }
+
+                 case 4 -> {
+                     System.out.println("Budget by store");
+                     scanner.nextLine();
+                     System.out.println("Input store: ");
+                     String store = scanner.nextLine();
+                     System.out.println("In store " + store + " spent " + monthBudget.getBudgetByStore(store));
+                 }
+
+                 case 5 -> {
+                     System.out.println("Budget by person");
+
+                 }
+
+                 case 6-> {
+                     System.out.println("Budget by date");
+
+                 }
+
+                 case 7 -> {
+                     System.out.println("Saving budget...");
+                     try{
+                         PrintWriter pw = new PrintWriter(new FileWriter(FILE_NAME)); //
+                         pw.println("id,store,person,amount,date");
+                         for (Purchase p : purchaseList) {
+                             pw.println(p);
+                         }
+                         pw.println(budget); // сохранили бюджет
+                         pw.flush(); // толкаем запись
+                         pw.close();
+                     }catch (Exception e){
+                         throw new RuntimeException();
+                     }
+                 }
+
+
                  case 8 -> {
                      System.out.println("Loading...");
                      try(BufferedReader br = new BufferedReader(new FileReader(FILE_NAME))){
@@ -85,6 +119,11 @@ public class BudgetAppl {
                          str = br.readLine();
                          while(str != null){
                              cells = str.split(",");
+                             if(cells.length == 1){
+                                 double b = Double.parseDouble(cells[0]);
+                                 budget = b;
+                                 break;
+                             }
                              int id = Integer.parseInt(cells[0]);
                              String store = cells[1];
                              String person = cells[2];
