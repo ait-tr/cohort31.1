@@ -36,7 +36,7 @@ public class BudgetImpl implements Budget{
         if(purchase == null || purchases.contains(purchase)){
            return false;
         }
-        return purchases.add(purchase);
+        return purchases.add(purchase); // используем метод add от ArrayList
     }
 
     @Override

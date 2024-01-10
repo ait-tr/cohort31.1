@@ -36,7 +36,7 @@ class BudgetImplTest {
 
     @Test
     void addMoney() {
-        assertEquals(1100, monthBudget.addMoney(100));
+        assertEquals(1100, monthBudget.addMoney(100)); // добавляем в бюджет деньги и проверяем результат
         assertEquals(1300, monthBudget.addMoney(200));
     }
 

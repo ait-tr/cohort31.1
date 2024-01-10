@@ -28,6 +28,7 @@ public enum Menu {
             System.out.print(menu[i].id + ": " + menu[i].item + " | ");
         }
         System.out.println();
+        System.out.println("Input your choice: ");
     }
 
 }
