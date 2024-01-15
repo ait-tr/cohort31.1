@@ -5,13 +5,13 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/homework/events/src/de/ait/events_app/controllers/UserController.java",
-    "code/homework/events/src/de/ait/events_app/models/User.java",
-    "code/homework/events/src/de/ait/events_app/repositories/impl/UserRepositoryListImpl.java",
+    "code/homework/events/src/de/ait/events_app/controllers/EventController.java",
+    "code/homework/events/src/de/ait/events_app/models/Event.java",
+    "code/homework/events/src/de/ait/events_app/repositories/impl/EventRepositoryListImpl.java",
     "code/homework/events/src/de/ait/events_app/repositories/CrudRepository.java",
-    "code/homework/events/src/de/ait/events_app/repositories/UserRepository.java",
-    "code/homework/events/src/de/ait/events_app/services/impl/UserServiceImpl.java",
-    "code/homework/events/src/de/ait/events_app/services/UserService.java",
+    "code/homework/events/src/de/ait/events_app/repositories/EventRepository.java",
+    "code/homework/events/src/de/ait/events_app/services/impl/EventServiceImpl.java",
+    "code/homework/events/src/de/ait/events_app/services/EventService.java",
     "code/homework/events/src/de/ait/events_app/Main.java"
 
   ],
