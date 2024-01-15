@@ -1,6 +1,41 @@
 # Lesson plan No. 6 01/16/2024
 
+1. What did we do yesterday?
+- created a new project App1-1 based on the Maven builder
+- transferred the code of the App1-1 project with users to it
+- made a repository implementation on the file UserRepositoryFileImpl.java with methods:
+    - void save(User user)
+    - List<User> findAll()
+    - User findByEmail(String email)
+- used Dependency Injection (DI) when connecting the repository to Main
+- added dependencies for junit-engine and junit-api to pom.xml
+- started writing tests for the service layer of the application
 
+2. Homework was:
+- do it in the Events project **Events (holiday calendar)**
+  implementation of a repository on a file.
+
+What questions, difficulties?
+
+3. Action plan for the lesson:
+    - testing the service layer of the application:
+        - UserRepositoryFileImplTest.java
+            - creating a temporary test file
+            - deleting temporary test file
+          -------------------------------------------------- -
+            - checking the correctness of the formation of a line in a file
+            - check for receiving a list of users from a file
+
+        - UserServiceImplTest.java
+            - reaction to incorrect email
+            - reaction to incorrect password
+            - reaction to an attempt to create an existing user
+            - checking user creation
+
+    - implementation of the void updateUser() method
+        - add a command call to Main -> call the service
+        - add a method to the UserService service -> call the repository
+        - add the method to the repository -> update the file
 
 
 ----------------------------------------------------------
@@ -9,7 +44,7 @@
 
 1. Что мы сделали вчера?
  - завели новый проект App1-1 на основе сборщика Maven
- - перенесли в него код проекта с пользователями 
+ - перенесли в него код проекта App1-1 с пользователями 
  - сделали реализацию репозитория на файле UserRepositoryFileImpl.java c методами:
    - void save(User user)
    - List<User> findAll()
