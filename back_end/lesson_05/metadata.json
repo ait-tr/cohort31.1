@@ -5,14 +5,14 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/application/src/de/ait/app1/controllers/UserController.java",
-    "code/application/src/de/ait/app1/models/User.java",
-    "code/application/src/de/ait/app1/repositories/impl/UserRepositoryListImpl.java",
-    "code/application/src/de/ait/app1/repositories/CrudRepository.java",
-    "code/application/src/de/ait/app1/repositories/UserRepository.java",
-    "code/application/src/de/ait/app1/services/impl/UserServiceImpl.java",
-    "code/application/src/de/ait/app1/services/UserService.java",
-    "code/application/src/de/ait/app1/Main.java"
+    "code/homework/evenys/src/de/ait/events_app/controllers/UserController.java",
+    "code/homework/evenys/src/de/ait/events_app/models/User.java",
+    "code/homework/evenys/src/de/ait/events_app/repositories/impl/UserRepositoryListImpl.java",
+    "code/homework/evenys/src/de/ait/events_app/repositories/CrudRepository.java",
+    "code/homework/evenys/src/de/ait/events_app/repositories/UserRepository.java",
+    "code/homework/evenys/src/de/ait/events_app/services/impl/UserServiceImpl.java",
+    "code/homework/evenys/src/de/ait/events_app/services/UserService.java",
+    "code/homework/evenys/src/de/ait/events_app/Main.java"
 
   ],
   "video": ""
