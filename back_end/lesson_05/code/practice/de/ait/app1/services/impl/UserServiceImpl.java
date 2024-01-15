@@ -1,4 +1,4 @@
-package de.ait.app1.services.impl;
+package practice.de.ait.app1.services.impl;
 
 import de.ait.app1.models.User;
 import de.ait.app1.repositories.UserRepository;
