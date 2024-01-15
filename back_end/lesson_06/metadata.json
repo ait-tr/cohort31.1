@@ -19,8 +19,7 @@
     "code/practice/de/ait/app1/repositories/impl/UserRepositoryListImpl.java",
     "code/practice/de/ait/app1/repositories/CrudRepository.java",
     "code/practice/de/ait/app1/repositories/UserRepository.java",
-    "code/practice/de/ait/app1/Main.java",
-    "code/app1_1/test/java/de/ait/app1/repositories/impl/UserRepositoryFileImplTest.java"
+    "code/practice/de/ait/app1/Main.java"
 
   ],
   "video": ""
