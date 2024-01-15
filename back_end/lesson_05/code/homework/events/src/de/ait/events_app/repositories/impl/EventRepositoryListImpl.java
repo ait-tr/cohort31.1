@@ -49,4 +49,9 @@ public class EventRepositoryListImpl implements EventRepository {
                 .findFirst()
                 .orElse(null);
     }
+
+    @Override
+    public Long quantity() {
+        return (long) eventList.size();
+    }
 }

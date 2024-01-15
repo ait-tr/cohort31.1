@@ -39,6 +39,8 @@ public class EventServiceImpl implements EventService {
 
         Event event = new Event(title, date);
 
+        eventRepository.save(event); // сохраняем пользователя в хранилище
+
         return event;
     }
 
