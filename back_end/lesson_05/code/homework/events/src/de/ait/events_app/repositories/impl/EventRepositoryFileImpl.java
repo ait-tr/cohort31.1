@@ -20,7 +20,7 @@ public class EventRepositoryFileImpl implements EventRepository {
     @Override
     public void save(Event event) {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(fileName, true))) {
-            event.setId(generatedId);
+            event.setId(findAll().size() + generatedId); // считаем длину списка и добавляем generatedId = 1L
             writer.write(event.getId() + "," + event.getTitle() + "," + event.getDate());
             writer.newLine();
             writer.flush(); // толкаем запись
@@ -29,7 +29,7 @@ public class EventRepositoryFileImpl implements EventRepository {
         } catch (IOException e) {
             throw new IllegalStateException("Problem with file." + e.getMessage());
         }
-        generatedId++;
+        // generatedId++; // не нужно, так как в строке 23 корректно считаем id добавляемого события
     }
 
     @Override
