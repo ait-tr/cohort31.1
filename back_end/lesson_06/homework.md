@@ -7,7 +7,7 @@
     * Написать тесты на репозиторий и сервис (аналогично, как делалось на занятии)
     * Реализовать метод updateEvent()
 
-### Задание 2 
+### Задание 2 (*) 
 Реализовать метод для удаления события
 
 ### Задание 3
@@ -22,5 +22,4 @@
 134	EEHZV-9P3XG-CPC62-R2HXC-JLZX2   16.01.2024 cohort 31.1 Derkach Oleksandr by Leonid Kleimann
 
 Инструкция:  https://github.com/ait-tr/idea-licenses/blob/main/README.md 
-
 

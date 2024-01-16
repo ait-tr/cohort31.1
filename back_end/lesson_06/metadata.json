@@ -5,21 +5,7 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/homework/events/src/de/ait/events_app/controllers/EventController.java",
-    "code/homework/events/src/de/ait/events_app/models/Event.java",
-    "code/homework/events/src/de/ait/events_app/repositories/impl/EventRepositoryListImpl.java",
-    "code/homework/events/src/de/ait/events_app/repositories/CrudRepository.java",
-    "code/homework/events/src/de/ait/events_app/repositories/EventRepository.java",
-    "code/homework/events/src/de/ait/events_app/services/impl/EventServiceImpl.java",
-    "code/homework/events/src/de/ait/events_app/services/EventService.java",
-    "code/homework/events/src/de/ait/events_app/Main.java",
-    "code/practice/de/ait/app1/controllers/UserController.java",
-    "code/practice/de/ait/app1/models/User.java",
-    "code/practice/de/ait/app1/repositories/impl/UserRepositoryFileImpl.java",
-    "code/practice/de/ait/app1/repositories/impl/UserRepositoryListImpl.java",
-    "code/practice/de/ait/app1/repositories/CrudRepository.java",
-    "code/practice/de/ait/app1/repositories/UserRepository.java",
-    "code/practice/de/ait/app1/Main.java"
+    "code/README.md"
 
   ],
   "video": ""
