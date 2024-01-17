@@ -27,13 +27,13 @@
           class="storage.Materials">
     </bean>
 
-    <bean id="payment_method"
-        class="shopping.Card">
-    </bean>
+<!--    <bean id="payment_method"-->
+<!--        class="shopping.Card">-->
+<!--    </bean>-->
 
-    <bean id = "wallet"
-          class = "shopping.Wallet">
-        <property name="money" ref="payment_method"/>
-    </bean>
+<!--    <bean id = "wallet"-->
+<!--          class = "shopping.Wallet">-->
+<!--        <property name="money" ref="payment_method"/>-->
+<!--    </bean>-->
 
 </beans>
