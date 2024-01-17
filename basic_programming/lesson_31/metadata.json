@@ -1,0 +1,15 @@
+{
+	"plan": "plan.md",
+	"theory": "theory.md",
+	"homework": "homework.md",
+	"code": [
+		"code/src/Soldier.java",
+		"code/src/ArrayTools.java",
+		"code/src/ArrayToolsTest.java",
+		"code/src/JsonWrapper2.java",
+		"code/src/JsonWrapper2Appl.java",
+		"code/src/homeworks/Garage.java",
+		"code/src/homeworks/GarageImpl.java",
+		"code/src/homeworks/GarageTest.java"
+	]
+}

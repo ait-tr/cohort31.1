@@ -1,0 +1,14 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "./code/react-code/App/Button/Button.jsx",
+    "./code/react-code/App/Button/index.js",
+    "./code/react-code/App/Button/styles.css",
+    "./code/react-code/App/App.css",
+    "./code/react-code/App/App.jsx"
+  ],
+  "video": "",
+  "etc": ""
+}

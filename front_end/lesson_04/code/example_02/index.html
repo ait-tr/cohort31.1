@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pirates recruiting campain</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <form action="greetings.html" method="get">
+    <label for="pirate-name">Ваше пиратское имя</label>
+    <input type="text" id="pirate-name" placeholder="введите имя" name="pirateName" required>
+    <label for="birth-date">Дата рождения</label>
+    <input type="date" id="birth-date" placeholder="дата рождения" name="birthDate" required>
+
+    <label for="flag-color">Цвет пиратского флага</label>
+    <input type="color" id="flag-color" name="flagColor">
+
+    <input type="radio" id="saber-input" name="weapon" value="saber">
+    <label for="saber-input">сабля</label>
+    <input type="radio" id="pistol-input" name="weapon" value="pistol" checked>
+    <label for="pistol-input">пистолет</label>
+    <fieldset>
+      <label>Контрабанда</label>
+      <input id="alcohol" type="checkbox" name="alcohol" value="rum">
+      <label for="alcohol">Ром</label>
+
+      <input id="cigars" type="checkbox" name="cigars" value="cuban">
+      <label for="cigars">Кубинские сигары</label>
+    </fieldset>
+
+    <select name="numberOfLegs" id="legsInput">
+      <option value="2">Две ноги</option>
+      <option value="1" selected>Одна нога</option>
+      <option value="0" disabled>Обе ноги - деревяшки</option>
+    </select>
+
+    <button type="submit" class="btn-become-pirate">Стать пиратом</button>
+  </form>
+</body>
+
+</html>

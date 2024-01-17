@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* 
+    селектор: 
+    - по тегу: p, h1
+    - по ид: #name-of-id
+    - по классу: .name-of-class
+     */
+    #first-paragraph {
+      background-color: lightblue;
+      color: lightcoral;
+    }
+
+    h1 {
+      color: lightgreen;
+    }
+    
+  </style>
+  <!-- ниже external  -->
+  <link rel="stylesheet" href="./css/style.css">
+  <title>CSS intro</title>
+</head>
+
+<body>
+  <h1>Три способа подключить css</h1>
+  <ul>
+    <li>internal - внтуренний css - тег style внутри head</li>
+    <li>
+      external - внешний css - в отдельном файле, например style.css
+      -  подключаем в head используя link
+    </li>
+    <li>inline css - внутри самого элемента, который хотим стилизовать</li>
+  </ul>
+  <p id="first-paragraph">Данный параграф стилизиется через internal css</p>
+  <p id="experiment" class="standard-paragraph special">
+    Второй параграф
+  </p>
+  <p style="color: blue; text-align: center;">
+    Данный параграф стилизуется инлайн
+  </p>
+</body>
+
+</html>

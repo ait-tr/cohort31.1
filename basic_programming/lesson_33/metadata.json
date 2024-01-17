@@ -1,0 +1,12 @@
+{
+	"plan": "plan.md",
+	"theory": "theory.md",
+	"homework": "homework.md",
+	"code": [
+		"code/books/dao/Library.java",
+		"code/books/dao/LibraryImpl.java",
+		"code/books/model/Book.java",
+		"code/books/LibraryAppl.java"
+
+	]
+}

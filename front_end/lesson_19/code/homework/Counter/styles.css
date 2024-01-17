@@ -1,0 +1,15 @@
+.counter-wrapper {
+  display: flex;
+  width: 100%;
+}
+
+.button-control {
+  width: 100px;
+  height: 30px;
+}
+
+.counter-text {
+  font-size: 20px;
+  margin: 5px;
+  color: green;
+}

@@ -1,0 +1,20 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "./code/homework/App.jsx",
+    "./code/homework/ProfileCard/ProfilCard.jsx",
+    "./code/homework/ProfileCard/index.js",
+    "./code/homework/ProfileCard/styles.css",
+    "./code/useState-and-triggers/App.jsx",
+    "./code/useState-and-triggers/Button/Button.jsx",
+    "./code/useState-and-triggers/Button/index.js",
+    "./code/useState-and-triggers/Button/styles.css",
+    "./code/useState-and-triggers/Lesson18/index.js",
+    "./code/useState-and-triggers/Lesson18/Lesson18.jsx",
+    "./code/useState-and-triggers/Lesson18/styles.css"
+  ],
+  "video": "",
+  "etc": ""
+}

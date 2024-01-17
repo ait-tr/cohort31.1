@@ -1,0 +1,19 @@
+{
+  "topic": "Introduction to the programming in Java. \"Hello, World!!!\" program",
+  "date": "2023-05-16",
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/application/src/de/ait/app1/controllers/UserController.java",
+    "code/application/src/de/ait/app1/models/User.java",
+    "code/application/src/de/ait/app1/repositories/impl/UserRepositoryListImpl.java",
+    "code/application/src/de/ait/app1/repositories/CrudRepository.java",
+    "code/application/src/de/ait/app1/repositories/UserRepository.java",
+    "code/application/src/de/ait/app1/services/impl/UserServiceImpl.java",
+    "code/application/src/de/ait/app1/services/UserService.java",
+    "code/application/src/de/ait/app1/Main.java"
+
+  ],
+  "video": ""
+}

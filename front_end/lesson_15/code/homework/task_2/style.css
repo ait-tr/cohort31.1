@@ -1,0 +1,11 @@
+* {
+    font-size: large;
+    color: green;
+  }
+  p {
+    font-size: larger;
+    color: red;
+  }
+  div {
+    margin: 5px;
+  }

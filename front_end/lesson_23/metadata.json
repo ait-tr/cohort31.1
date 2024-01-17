@@ -1,0 +1,20 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "./code/Homework22/Homework22.tsx",
+    "./code/Homework22/index.ts",
+    "./code/Homework22/styles.ts",
+    "./code/Input/index.ts",
+    "./code/Input/Input.tsx",
+    "./code/Input/styles.ts",
+    "./code/Input/types.ts",
+    "./code/styles/colors.ts",
+    "./code/styles/GlobalStyles.ts",
+    "./code/App.tsx",
+    "./code/index.tsx"
+  ],
+  "video": "",
+  "etc": ""
+}

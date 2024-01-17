@@ -1,0 +1,15 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "./code/typescript/Counter/Counter.tsx",
+    "./code/typescript/Counter/index.ts",
+    "./code/typescript/Counter/styles.css",
+    "./code/typescript/Lesson21/index.ts",
+    "./code/typescript/Lesson21/Lesson21.tsx",
+    "./code/typescript/Lesson21/styles.css"
+  ],
+  "video": "",
+  "etc": ""
+}
