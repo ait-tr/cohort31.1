@@ -10,8 +10,8 @@ import java.util.Scanner;
 
 public class Main {
 
-    private static final String FILE_NAME = "/Users/leonidk/Desktop/Events/src/de/ait/events_app/events.txt";
-
+    private static final String FILE_NAME = "/Users/leonidk/Desktop/Events-1/src/main/java/de/ait/events_app/events.txt";
+    // /Users/leonidk/Desktop/Events-1/src/main/java/de/ait/events_app/events.txt
     public static void main(String[] args) {
 
         // DI

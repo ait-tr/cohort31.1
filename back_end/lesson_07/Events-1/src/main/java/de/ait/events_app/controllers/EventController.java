@@ -51,6 +51,6 @@ public class EventController {
         String str = scanner.nextLine();
         LocalDate newDate = LocalDate.parse(str);
 
-        eventService.updateUser (idForUpdate, newTitle, newDate);
+        eventService.updateEvent (idForUpdate, newTitle, newDate);
     }
 }

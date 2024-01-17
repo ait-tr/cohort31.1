@@ -39,10 +39,9 @@ public class EventRepositoryFileImpl implements EventRepository {
 
     @Override
     public void update(Event event) {
-        // на вход получили пользователя, нужно его данные перезаписать в файле
+        // на вход получили событие, нужно его данные перезаписать в файле
         // нюанс! - нельзя переписать одну строку в файле, нужно переписывать файл полностью.
         List<Event> events = findAll(); // получили все события из файла
-
         // находим обновляемое событие по его id
         Event eventForUpdate = events.stream()
                 .filter(e -> e.getId() == event.getId())
@@ -51,7 +50,7 @@ public class EventRepositoryFileImpl implements EventRepository {
         // удаляем событие из списка по его id
         events.remove(eventForUpdate);
         // добавляем событие в список
-        events.add(event);
+        events.add(event); // добавляем в конец списка
         // делаем цикл, который записывает все события из списка в файл
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(fileName))) {
             // начало цикла

@@ -3,6 +3,8 @@ package de.ait.app1.services.impl;
 import de.ait.app1.models.User;
 import de.ait.app1.repositories.UserRepository;
 import de.ait.app1.services.UserService;
+import de.ait.app1.validation.EmailValidator;
+import de.ait.app1.validation.PasswordValidator;
 
 import java.util.List;
 
@@ -10,10 +12,15 @@ public class UserServiceImpl implements UserService {
 
     // dependency injection
     public final UserRepository userRepository; // зависимость на UserRepository
+    // добавляем зависимость на валидаторы, так как это часть бизнес-логики
+    private final EmailValidator emailValidator;
+    private final PasswordValidator passwordValidator;
 
     // constructor
-    public UserServiceImpl(UserRepository userRepository) {
+    public UserServiceImpl(UserRepository userRepository, EmailValidator emailValidator, PasswordValidator passwordValidator) {
         this.userRepository = userRepository;
+        this.emailValidator = emailValidator;
+        this.passwordValidator = passwordValidator;
     }
 
     // бизнес-логика
@@ -21,13 +28,16 @@ public class UserServiceImpl implements UserService {
     @Override
     public User addUser(String email, String password) {
         // валидация email
-        if(email == null || email == "" || email.equals(" ")) {
-            throw new IllegalArgumentException("Email can't be empty");
-        }
+//        if(email == null || email == "" || email.equals(" ")) {
+//            throw new IllegalArgumentException("Email can't be empty");
+//        }
+        emailValidator.validate(email);
+
         // валидация password
-        if(password == null || password == "" || password.equals(" ")) {
-            throw new IllegalArgumentException("Password can't be empty");
-        }
+//        if(password == null || password == "" || password.equals(" ")) {
+//            throw new IllegalArgumentException("Password can't be empty");
+//        }
+        passwordValidator.validate(password);
 
         // проверить, что такого пользователя еще нет
         User existedUser = userRepository.findByEmail(email);
@@ -69,5 +79,9 @@ public class UserServiceImpl implements UserService {
         }
         userRepository.update(userForUpdate);
     }
+
+
+
+
 
 }

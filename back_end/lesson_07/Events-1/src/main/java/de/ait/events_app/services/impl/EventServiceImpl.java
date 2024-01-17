@@ -46,7 +46,7 @@ public class EventServiceImpl implements EventService {
     }
 
     @Override
-    public void updateUser(Long id, String newTitle, LocalDate newDate) {
+    public void updateEvent(Long id, String newTitle, LocalDate newDate) {
         // берем весь список
         List<Event> events = eventRepository.findAll();
         // находим событие по id
@@ -54,6 +54,7 @@ public class EventServiceImpl implements EventService {
                 .filter(e -> e.getId() == id)
                 .findFirst()
                 .orElse(null);
+
         if(eventForUpdate == null) {
             throw new IllegalArgumentException("Event wis id <" + id + "> not found.");
         }

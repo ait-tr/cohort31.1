@@ -9,6 +9,5 @@ public interface EventService {
 
     Event addEvent(String title, LocalDate date);
     List<Event> getAllEvents();
-
-    void updateUser(Long id, String newTitle, LocalDate newDate);
+    void updateEvent(Long id, String newTitle, LocalDate newDate);
 }
