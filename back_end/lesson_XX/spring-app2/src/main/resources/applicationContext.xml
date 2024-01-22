@@ -12,7 +12,7 @@
     </bean>
 
     <bean id = "musicPlayer"
-        class = "music_player.MusicPlayer">
+        class = "main.java.music_player.MusicPlayer">
         <property name="music" ref="musicBean"/>
         <property name="name" value="iPod"/>
         <property name="volume" value="50"/>

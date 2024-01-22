@@ -1,4 +1,4 @@
-package main.java.music_player;
+package music_player;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
