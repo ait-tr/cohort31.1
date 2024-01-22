@@ -1,5 +1,84 @@
 # Theory
 
+## Frontend and Backend - the difference
+
+* **Backend** - server application with business logic and working with a database. PROCESSES HTTP requests.
+* Written in Java, C#, Golang, Ruby, etc.
+
+* **Frontend** - client application, runs in the browser, SENDS HTTP requests and receives responses
+* Frontend - HTML, CSS, JS + framework (React, Vue, Angular)
+
+* From a code point of view, they can be stored in one project, developed on one developer’s computer with access through local addresses (ports), for example, localhost:8080.
+
+## Spring Boot
+
+## How to connect?
+
+* The parent dependency must be specified on `spring-boot-starter-parent` in pom.xml
+* This dependency contains links to other dependencies that a Spring Boot application needs
+* So, to ensure you have the necessary tools, you need to specify this dependency as a parent
+
+```
+<parent>
+         <groupId>org.springframework.boot</groupId>
+         <artifactId>spring-boot-starter-parent</artifactId>
+         <version>2.7.15</version>
+         <relativePath/> <!-- lookup parent from repository -->
+</parent>
+```
+
+## What is the difference between Spring and Spring Boot?
+
+* Spring - IoC/DI, creating beans and linking them together (`@Component`, `@Autowired`, `@Bean`, `@Configuration`, `@Qualifier`)
+
+* Spring Boot provides opportunities for auto-configuring a web application, namely:
+  * Web environments (in particular, the Tomcat server) are a separate application that is not very easy to configure and run
+  * Connect to databases
+  * Authorization and authentication, working with user profiles
+  * Working with `application.properties`
+  * etc.
+
+### Spring Boot Application Structure
+
+* `main` - folder with main source code
+  * `java` - source code in Java
+  * `resources` - folder with resources
+    * `application.properties` - file with application settings
+    * `static` - folder for placing static content (html, css, js)
+    * `templates` - folder for placing templates (for example, Freemarker)
+
+## Spring Web
+
+* Spring Web is part of the Spring framework, which contains a huge number of libraries and classes for simple implementation of Web applications.
+* If you use Spring Web in conjunction with Spring Boot, then everything works out of the box and you don’t need to configure anything.
+* Controllers are special Spring (Web) beans that handle HTTP requests.
+* Controllers are marked with the `@Controller` annotation, which works the same as `@Component`, but for a web application.
+
+### Annotations for the Web Application
+
+* `@PostMapping` - mark with this annotation the method that will process an HTTP request of the `POST` type
+* `@RequestParam` - an annotation that allows you to extract an HTTP request parameter with a specific name
+  * This parameter can be passed as part of the URL, or as part of the request body
+    * `google.com/search?q=hello` - `@RequestParam("q") String query`
+
+### Dynamic HTML pages
+
+* There are pages that cannot be static, their content and content are constantly changing
+* For example, "list of users". This page is subject to change throughout the life of the program, depending on users.
+
+* What solution to the problem is there in our case?
+* Various template engines are used (Freemarker, JSP, JSF)
+* YOU describe a template with special template engine tags, and then this template engine generates a new version of the HTML page in real time
+
+### MVC
+
+* Model, View, Controller - an approach to developing web applications, which implies the presence of three important components:
+  * Model - data (in our case, this is `usersList`)
+  * View - view (in our case, this is `users_page`)
+  * Controller - a request handler whose task is to connect data and presentation
+* Classic approach implemented in many programming languages and frameworks.
+* Although the approach is considered obsolete, it is well suited for implementing small applications
+* Including a huge number of large systems written in this style.
 
 ==========================================================
 # Теория
@@ -54,7 +133,7 @@
 ## Spring Web
 
 * Spring Web - часть фреймворка Spring, которая содержит огромное количество библиотек и классов для простой реализации Web-приложений.
-* Если используется Spring Web в связке с Spring Boot - то все работает из коробки и настраивать ничего не надо.
+* Если используется Spring Web в связке со Spring Boot - то все работает из коробки и настраивать ничего не надо.
 * Контроллеры (Controllers) - особые бины Spring (Web), которые занимаются обработкой HTTP-запросов.
 * Контроллеры помечаются аннотацией `@Controller`, которая работает также, как `@Component`, но для веб-приложения.
 
