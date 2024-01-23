@@ -115,26 +115,32 @@ Implementation plan:
 получить данные пользователя из формы регистрации, записать пользователя в репозиторий, отобразить список зарегистрированных пользователей на отдельной странице.
 
 **План реализации:**
-- создаем на странице регистрации форму для регистрации пользователей на 3 поля 
+- создаем на странице регистрации форму для регистрации пользователей на 3 поля
    (делаем пока без ID, за это будет отвечать БД)
         - имя (ник)
         - email
         - пароль
     - model.User - обновить
     - repository
-        - CrudRepository - 5 типовых методов:
-          - 
-        - UserRepository - наследуется от ..., добавляем метод ...
+        - CrudRepository - 5 типовых методов (CRUD):
+          - save (create)
+          - update 
+          - delete
+          - findById
+          - findAll
+        - UserRepository - наследуется от CrudRepo, добавляем метод findByEmail (Email - это Set уникальных ид)
         impl:
             - UserRepositoryFileImpl - делаем имплементацию главных (самых нужных на 1-м этапе) методов:
-              - ...
-              - ...
+              - save
+              - findAll
     - service
-        - UserService - подключаем к нему ... , реализуем методы ...
-            делаем impl
-            - UserServiceImpl
+        - UserService - подключаем к нему UserRepository, реализуем методы:
+          - addUser
+          - findAll
+              делаем impl
+              - UserServiceImpl - реализуем 2 метода
     - controller
-        - UserController
+        - UserController - подключаем к нему UserService
             - @PostMapping
             - @GetMapping 
 - создаем необходимые html-страницы
