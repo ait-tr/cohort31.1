@@ -1,10 +1,17 @@
 ##  Homework
 
+## Task 1
+Install MySQL on your computer.
+
+## Task 2
+By analogy with mvc blog-demo, remake your project mvc-CRUD-event,
+repeat the code in it to create event (name, description).
+
+===================================================
+
 ## Задание 1 
-По аналогии с MusicPlayer реализовать примеры:
-- Склад-база, которая хранит разные товары и/или материалы
-- Кошелек, который оплачивает разными способами - наличные, карты, банковский перевод
+Установить себе на компьютер MySQL.
 
 ## Задание 2
-По аналогии с mvc-demo1 сделать свой новый проект mvc-demo-event1,
-в нем повторить код для создания event (name, description, data).
+По аналогии с mvc blog-demo переделать сделать свой проект mvc-CRUD-event,
+в нем повторить код для создания event (name, description).
