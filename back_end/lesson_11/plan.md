@@ -1,5 +1,69 @@
 # Lesson plan No.11 01/24/2024
 
+1. What we did in the last lesson:
+
+## Followed the steps:
+
+**Task:**
+get user data from the registration form, write the user to the repository, display a list of registered users on a separate page.
+
+**Implementation plan:**
+- create a form on the registration page for registering users with 3 fields
+  (we do it without ID for now, the database will be responsible for this)
+    - name (nickname)
+    - email
+    - password
+        - model.User - update
+          -repository
+            - CrudRepository - 5 standard methods (CRUD):
+                - save (create)
+                - update
+                - delete
+                - findById
+                - findAll
+            - UserRepository - inherited from CrudRepo, add the findByEmail method (Email is a Set of unique IDs)
+              impl:
+                - UserRepositoryFileImpl - we implement the main (most necessary at the 1st stage) methods:
+                  -save
+                    - findAll
+        - service
+            - UserService - connect UserRepository to it, implement methods:
+                - addUser
+                - findAll
+                  do impl
+                    - UserServiceImpl - implement 2 methods
+        - controller
+            - UserController - connect UserService to it
+                - @PostMapping
+                - @GetMapping
+
+        - specify the file for storing users in application.properties
+
+2. Plan for today's lesson:
+
+**Task 1:**
+Finishing mvc-demo1:
+- create the necessary html pages:
+    - home (done)
+    - registration_page (done)
+   ----------------------------------
+    - success_signUp.html
+    - users.html
+    - finishing the UserController - request processing
+- make navigation between pages
+- checking the solution
+
+**Task 2:**
+Based on the experience gained, let's make a blog (blog-demo) using the following technologies:
+- Spring + Spring Boot, Spring Initializr: Spring WEB, Thymeleaf, Java Persistence API(JPA)
+- Thymeleaf template engine
+- Bootstrap: page design, CSS
+- MySQL DBMS
+  Based on MVC architecture, we will create a CRUD application that has the ability to:
+- create a blog post;
+- edit a blog post;
+- display all posts and view each post;
+- delete post.
 
 ================================================================
 
