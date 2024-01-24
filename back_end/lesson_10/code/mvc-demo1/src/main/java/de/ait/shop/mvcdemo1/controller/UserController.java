@@ -20,8 +20,9 @@ public class UserController {
     public String addUser(@RequestParam("name") String name,
                           @RequestParam("email") String email,
                           @RequestParam("password") String password){
-        System.out.println(name + " " + email + " " + password );
-        return null;
+        // System.out.println(name + " " + email + " " + password );
+        userService.addUser(name, email, password);
+        return "redirect:/success_registration.html";
     }
 
 
