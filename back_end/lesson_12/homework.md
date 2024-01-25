@@ -10,7 +10,7 @@ repeat the code in it to create event (name, description).
 ===================================================
 
 ## Задание 1 
-Установить себе на компьютер PostgresSQL.
+Установить себе на компьютер Postgres SQL.
 
 ## Задание 2
 По аналогии с mvc blog-demo переделать сделать свой проект mvc-CRUD-event,
