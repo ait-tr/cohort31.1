@@ -53,12 +53,13 @@ Based on the experience gained, let's make a blog (blog-demo) using the followin
 4. Подключение к СУБД 
    - конфигурирование IDE
    - файл application.properties
-5. Разработка BlogController и страниц блога:
-   - blog-main.html
-   - blog-add.html
-   - blog-details.html
-   - blod-edit.html
-   - blog-delete.html
+5. Разработка BlogController и страницы блога:
+   - blog-main.html - список всех постов ("подробнее..." - будет под каждым постом) 
+   - blog-add.html - добавлять новый блог (форма)
+   - blog-details.html - отображает содержимое поста 
+   - blod-edit.html - редактирование поста
+   - blog-delete.html - удаление поста
+все эти страницы и их адреса называются **end-points** 
 
 
 
