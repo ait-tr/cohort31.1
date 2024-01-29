@@ -9,7 +9,8 @@ repeat the code in it to create an event (name, description, date) and display a
 
 # Задание 1
 В проекте blog-demo (MVC) доделать возможность удаления поста.
+см. видеокурс.
 
 ## Задание 2
-По аналогии с api-demo сделать свой проект event-api-demo,
+По аналогии с api-REST-demo сделать свой проект event-api-REST-demo,
 в нем повторить код для создания event (name, description, date) ии отображения списка событий.
