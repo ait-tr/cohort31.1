@@ -1,45 +1,34 @@
 # Lesson plan No.14 01/29/2024
 
 1. What we did in the last lesson:
-    1. Create a project using Spring Initializr
-        - Spring WEB, Thymeleaf, Java Persistence API(JPA)
-    2. Creating a project structure:
-        - controller
-        - entity
-          -repository
-          3.home.html
-        - Thymeleaf connection
-        - connecting bootstrap design elements
-    4. Connection to the DBMS
-        - IDE configuration
-        - application.properties file
-    5. Development of BlogController and blog page:
-        - blog-main.html - list of all posts ("more details..." - will be under each post)
-        - blog-add.html - add a new blog (form)
-        - blog-details.html - displays the contents of the post
--------------------------------------------------- ----------
-    - blod-edit.html - post editing
-      - blog-delete.html - deleting a post
-        all these pages and their addresses are called **end-points**
-
-2. Plan for today's lesson:
 
 **Exercise 1:**
-- finishing the project **blog-demo**:
+- completed the **blog-demo (MVC)** project:
     - pages and their end-points - controllers:
         - blod-edit.html - post editing
-        - blog-delete.html - deleting a post
-    - go through the project again: architecture, logic, functionality
+        - blog-delete.html - deleting a post - **by yourself**
+    - went through the project again: architecture, logic, functionality
 
 **Task 2:**
-- create a new Spring Boot project api-demo (REST)
-    - web
-    - add Lombok and use its annotations
-- add a DTO layer to the application (see theory)
+- created a new Spring Boot project api-demo (REST)
+    - Spring Web
+    - Lombok
+- added a DTO layer to the application:
     - create a dto package containing the following classes:
         - NewUserDto
         - UserDto
-    - add the Swagger tool
+
+2. Plan for today's lesson:
+
+**Exercise 1**
+- finish UserService (methods weren’t done yesterday)
+- check the application with old controllers that the DTO layer works
+
+**Task 2**
+- new controllers on REST
+- sending requests from IntelliJ IDEA IDE
+- add the Swagger tool
+- API documentation
 
 
 ================================================================
@@ -53,7 +42,7 @@
   - страницы и их end-points - контроллеры:
       - blod-edit.html - редактирование поста
       - blog-delete.html - удаление поста - **самостоятельно**
-  - прошли по проекту еще раз: архитектура, логика, функционал
+  - прошли по проекту еще раз: архитектура, логика, функционал MVC
 
 **Задание 2:**
 - создали новый Spring Boot проект api-demo (REST)
