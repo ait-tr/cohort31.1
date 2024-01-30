@@ -81,4 +81,11 @@ public class BlogController  {
         return "redirect:/blog";
     }
 
+    @PostMapping("/blog/{id}/remove")
+    public String postDelete(@PathVariable(value = "id") Long id){
+        Post post = postRepository.findById(id).orElseThrow();
+        postRepository.delete(post);
+        return "redirect:/blog";
+    }
+
 }
