@@ -1,3 +1,5 @@
 Leo,klein@mail.com,Leo123,user
 Art,leonid@mail.com,Art123,admin
 Bob,bob@mail.com,bob123,user
+Alex,alex@mail.com,Alex2024,User
+Yuri,yuri@mail.com,qwerty123,admin
