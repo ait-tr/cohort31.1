@@ -28,7 +28,15 @@ public class UserServiceImpl implements UserService {
     @Override
     public UserDto addUser(NewUserDto newUser) {
         // создаем пользователя со всеми полями от newUser
-        User user = new User (newUser.getName(), newUser.getEmail(), newUser.getPassword(), newUser.getRole());
+        //User user = new User (newUser.getName(), newUser.getEmail(), newUser.getPassword(), newUser.getRole());
+
+        User user = User.builder()
+                .name(newUser.getName())
+                .email(newUser.getEmail())
+                .password(newUser.getPassword())
+                .role(newUser.getRole())
+                .build();
+
         // сохраняем его в репозитории
         userRepository.save(user);
         // возвращаем(показываем) пользователя, но без пароля
