@@ -1,5 +1,18 @@
 # Lesson plan No.14 01/29/2024
 
+1. What we did in the last lesson:
+
+- created a DTO layer
+- wrote new REST controllers for endpoint /users
+- learned to make GET and POST/PUT requests from IntelliJ IDEA (file request1.http)
+- added Swagger tool, opens via link
+  http://localhost:8080/swagger-ui/index.html#/Authentication/post_api_login
+- API documentation using annotations:
+  - @Schema (name = "Name", example = "Leonid")
+  - @Operation(summary = "Get all users", description = "For admin only ")
+
+2. Plan for today's lesson:
+- see file theory.md
 
 ================================================================
 
