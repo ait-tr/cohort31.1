@@ -20,11 +20,17 @@
 
 1. Что мы сделали на прошлом занятии:
 
-- создали слой DTO
+- создали слой DTO - он помогает(обеспечивает) передачу данных между клиентом и сервером(бек и фронтом)
+
 - написали новые контроллеры на REST для endpoint /users
+  - @GetMapping - забирает данные с сервера, Mapping - это сопоставление
+  - @PostMapping - отправляет данные на сервер
+
 - научились делать GET  и POST/PUT запросы из IDE IntelliJ IDEA (файл request1.http)
-- добавили инструмент Swagger, открывается по ссылке
+
+- добавили инструмент Swagger (вставили необходимую зависимость в pom.xml), открывается по ссылке
 http://localhost:8080/swagger-ui/index.html#/Authentication/post_api_login
+очень нужен тестировщикам(!!!)
 - документирование API с помощью аннотаций:
   - @Schema (name = "Name", example = "Leonid")
   - @Operation(summary = "Get all users", description = "For admin only ")
