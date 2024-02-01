@@ -22,6 +22,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public List<UserDto> getAllUsers() {
+
         return from(userRepository.findAll()); // метод from из класса UserDto
     }
 
