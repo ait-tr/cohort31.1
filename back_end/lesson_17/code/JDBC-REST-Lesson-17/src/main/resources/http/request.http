@@ -1,0 +1,14 @@
+### Get al users
+
+GET localhost:8080/users
+
+POST localhost:8080/users
+Content-Type: application/json
+
+### Add user
+{
+"name": "Alex",
+"email": "alex@mail.com",
+"password": "Alex2024",
+"role": "User"
+}
