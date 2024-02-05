@@ -1,4 +1,4 @@
-# Lesson plan No.16 02/01/2024
+# Lesson plan No.17 02/05/2024
 
 1. What we did in the last lesson:
 - implemented all CRUD methods using JdbcTemplate for the User class (entity) in the UserRepository class:
@@ -19,7 +19,7 @@
 
 ================================================================
 
-## План занятия №17 04.02.2024:
+## План занятия №17 05.02.2024:
 
 1. Что мы сделали на прошлом занятии:
 - реализовали **все CRUD методы** с помощью **JdbcTemplate** для класса (сущности) User в классе UserRepository:
