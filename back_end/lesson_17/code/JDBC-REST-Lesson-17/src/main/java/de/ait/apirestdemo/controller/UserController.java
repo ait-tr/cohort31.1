@@ -6,29 +6,38 @@ import de.ait.apirestdemo.dto.UserDto;
 import de.ait.apirestdemo.service.UserService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
+import io.swagger.v3.oas.annotations.tags.Tag;
+import io.swagger.v3.oas.annotations.tags.Tags;
 import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@AllArgsConstructor
-@Controller
+// @AllArgsConstructor
+// @Controller
+@Tags(value = @Tag(name = "Users"))
+@RequiredArgsConstructor
+@RestController
+@RequestMapping("/api/users")
 public class UserController {
 
     private final UserService userService; // DI
 
     @Operation(summary = "Get all users", description = "For admin only ")
-    @GetMapping("/users")
-    @ResponseBody
+    @GetMapping()
+    // @ResponseBody - не нужен, так как есть @RestController
     public List<UserDto> getAllUsers(){
         return userService.getAllUsers();
     }
 
     @Operation(summary = "Add new user", description = "For Admin only")
-    @PostMapping("/users")
-    @ResponseBody
+    @PostMapping()
+    @ResponseStatus(HttpStatus.CREATED) // добавляем статус 201 - Created
+    // @ResponseBody
     public UserDto add(@RequestBody NewUserDto newUser){
         return userService.addUser(newUser);
     }

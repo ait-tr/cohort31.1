@@ -17,6 +17,10 @@ import java.util.stream.Collectors;
 @NoArgsConstructor
 @Schema(name = "User", description = "User info")
 public class UserDto {
+    // добавляем id пользователя
+    @Schema(name = "User id", example = "1")
+    private Long id;
+
     @Schema(name = "Name", example = "Leonid")
     private String name;
     @Schema(name = "email", example = "leo@mail.com")
@@ -28,7 +32,7 @@ public class UserDto {
     // возвращает объект типа UserDto
     public static UserDto from(User user){
         // создаем объект UserDto с нужными нам полями
-        return new UserDto(user.getName(), user.getEmail(), user.getRole());
+        return new UserDto(user.getId(), user.getName(), user.getEmail(), user.getRole());
     }
     // этот метод собирает объекты типа UserDto в список, получая на вход список пользователей
     // со всеми их полями
