@@ -1,5 +1,5 @@
 ## Task 1
-
+Write DTO classes for the fitlio project yourself.
 
 
 ===================================================
