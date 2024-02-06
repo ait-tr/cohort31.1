@@ -63,5 +63,4 @@ public class UserController {
                               @RequestBody UpdateUserDto updateUser) {
         return userService.updateUser(id, updateUser);
     }
-
 }
