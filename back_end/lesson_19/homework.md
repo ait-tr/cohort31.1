@@ -1,5 +1,18 @@
 ## Task 1
+Explore the Education Center application code
+- prepare questions:
+  - What's not clear?
+  - how it works?
 
+## Task 2
+Do your research and figure out where to get the class from:
+PasswordEncoder
+
+## Task 3
+Add a method to the UserService interface to get a list of all users and implement it in UserServiceImpl.
+
+## Task 4
+Draw sketches of a report album from the Fitlio system
 
 
 ===================================================
