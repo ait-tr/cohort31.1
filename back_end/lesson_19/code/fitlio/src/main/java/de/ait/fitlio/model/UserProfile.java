@@ -33,4 +33,8 @@ public class UserProfile {
     private int height; // рост
     @Column
     private boolean allowance; // наличие допуска
+
+    @OneToOne(cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    @JoinColumn(name = "user_id")
+    private User user;
 }

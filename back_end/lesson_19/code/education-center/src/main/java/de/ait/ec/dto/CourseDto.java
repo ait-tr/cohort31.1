@@ -16,7 +16,6 @@ import java.util.stream.Collectors;
 @Builder
 @Schema(name = "Course", description = "Описание курса")
 public class CourseDto {
-
     @Schema(description = "идентификатор курса", example = "1")
     private Long id;
     @Schema(description = "название курса", example = "Java")
