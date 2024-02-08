@@ -77,13 +77,15 @@
 
 
 **Обязательные темы курса:**
-* Maven, pom.xml - конфигурация приложения
-* Введение в Spring - фреймворк, Dependency Injection (DI), Inversion of Control (отдаем управление приложением фреймворку)
-* Аннотации Spring (Lombok) - позволяют включать стандартные куски кода одним словом @...
-* Spring Boot - cовокупность библиотек для разработки и запуска приложения в сети Интернет и с СУБ  
-* MVC - model-view-controller, шаблонизаторы Freemarker, Thymeleaf
-* Spring Data JPA - Java Persistence API библиотека для подключения к СУБД, предоствавлят интерфейс и его методы CRUD (create, read, update, delete)
-* REST API - свод правил и рекомендаций для разработки endpoint (клиент-сервер) по протоколу HTTP, методы GET, POST, PUT, DELETE
+
+1. Maven, pom.xml - конфигурация приложения
+2. Введение в Spring - фреймворк, Dependency Injection (DI), Inversion of Control (отдаем управление приложением фреймворку)
+3. Аннотации Spring (Lombok) - позволяют включать стандартные куски кода одним словом @...
+4. Spring Boot - cовокупность библиотек для разработки и запуска приложения в сети Интернет и с СУБ  
+5. MVC - model-view-controller, шаблонизаторы Freemarker, Thymeleaf
+6. Spring Data JPA - Java Persistence API библиотека для подключения к СУБД, предоствавлят интерфейс и его методы CRUD (create, read, update, delete)
+7. REST API - свод правил и рекомендаций для разработки endpoint (клиент-сервер) по протоколу HTTP, методы GET, POST, PUT, DELETE
+
 --------------------------------
 
 Осталось на следующую неделю:
