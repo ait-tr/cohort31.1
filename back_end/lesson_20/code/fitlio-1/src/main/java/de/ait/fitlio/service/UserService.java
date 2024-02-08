@@ -9,7 +9,5 @@ public interface UserService {
 
     UserDto addUser(NewUserDto newUser);
 
-    //TODO список пользователей для администрирования
     List<UserDto> getAllUsers();
-
 }

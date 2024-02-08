@@ -25,7 +25,7 @@ public class FitlioDto {
     private int distance;
     private String fitType;
 
-    private static FitlioDto from(Fitlio fitlio){
+    public static FitlioDto from(Fitlio fitlio){
         return FitlioDto.builder()
                 .id(fitlio.getId())
                 .date(fitlio.getDate())
@@ -39,7 +39,7 @@ public class FitlioDto {
                 .build();
     }
 
-    private static List<FitlioDto> from(List<Fitlio> fitlios){
+    public static List<FitlioDto> from(List<Fitlio> fitlios){
         return fitlios.stream()
                 .map(FitlioDto::from)
                 .collect(Collectors.toList());

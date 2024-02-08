@@ -1,36 +1,25 @@
 ## Task 1
-Explore the Education Center application code
-- prepare questions:
-  - What's not clear?
-  - how it works?
+Complete the FitlioController controller in the same way as the course creation.
 
 ## Task 2
-Do your research and figure out where to get the class from:
-PasswordEncoder
+Using the example and similarity of the requests file, make your own for Fitlio:
+- users;
+- workout.
 
 ## Task 3
-Add a method to the UserService interface to get a list of all users and implement it in UserServiceImpl.
-
-## Task 4
-Draw sketches of a report album from the Fitlio system
+Draw sketches of an album of reports from the Fitlio system.
 
 
 ===================================================
 
 ## Задание 1
-Изучить код приложения Education Center
-- подготовить вопросы:
-  - что не понятно? 
-  - как это работает?
+Доделать контроллер FitlioController по образцу и подобию создания курса.
 
-## Задание 2 
-Провести исследование и понять, откуда взять класс: 
-PasswordEncoder 
+## Задание 2
+По образцу и подобию файла requests сделать свой для Fitlio:
+- пользователи;
+- тренировки.
 
 ## Задание 3
-Добавить в интерфейс UserService метод для получения списка всех пользователей и реализовать его в UserServiceImpl.
-
-## Задание 4
 Нарисовать эскизы альбом отчетов из системы Fitlio.
-
 
