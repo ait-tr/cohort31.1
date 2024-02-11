@@ -1,0 +1,31 @@
+### Добавление fitlio
+
+POST http://localhost:8080/api/fitlio
+Content-Type: application/json
+
+{
+  "title": "Jogging",
+  "description": "Once upon a time in the morning...",
+  "date": "2024-03-02",
+  "timeMinute": 45,
+  "timeHour": 0,
+  "calorie": 250,
+  "distance": 1500,
+  "fitType" : "GENERAL"
+}
+
+### Получение тренировок
+
+GET http://localhost:8080/api/fitlio
+
+
+### Регистрация пользователя
+
+POST localhost:8080/api/user/addUser
+Content-Type: application/json
+
+{
+  "name": "Name1",
+  "email": "name1@mail.com",
+  "password": "Password2024#"
+}
