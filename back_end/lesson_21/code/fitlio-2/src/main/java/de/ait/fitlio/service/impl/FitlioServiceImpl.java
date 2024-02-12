@@ -2,15 +2,11 @@ package de.ait.fitlio.service.impl;
 
 import de.ait.fitlio.dto.FitlioDto;
 import de.ait.fitlio.dto.NewFitlioDto;
-import de.ait.fitlio.exceptions.RestException;
 import de.ait.fitlio.model.Fitlio;
 import de.ait.fitlio.repository.FitlioRepository;
 import de.ait.fitlio.service.FitlioService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
-
-import java.time.LocalDate;
 import java.util.List;
 
 import static de.ait.fitlio.dto.FitlioDto.from;
@@ -27,7 +23,7 @@ public class FitlioServiceImpl implements FitlioService {
         Fitlio fitlio = Fitlio.builder()
                 .title(newFitlio.getTitle())
                 .description(newFitlio.getDescription())
-                .date(LocalDate.parse(newFitlio.getDate()))
+                .date(newFitlio.getDate())
                 .fitType(newFitlio.getFitType())
                 .timeMinute(newFitlio.getTimeMinute())
                 .timeHour(newFitlio.getTimeHour())
@@ -44,16 +40,4 @@ public class FitlioServiceImpl implements FitlioService {
         List<Fitlio> fitlioList = fitlioRepository.findAll();
         return from(fitlioList);
     }
-
-    @Override
-    public FitlioDto getFitlioById(Long fitlioId) {
-        Fitlio fitlio = getFitlioOrThrow(fitlioId);
-        return from(fitlio);
-    }
-
-    private Fitlio getFitlioOrThrow(Long fitlioId) {
-        return fitlioRepository.findById(fitlioId)
-                .orElseThrow(() -> new RestException(HttpStatus.NOT_FOUND, "Fitlio with id <" + fitlioId + "> not found"));
-    }
-
 }

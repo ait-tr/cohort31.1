@@ -14,7 +14,6 @@ public interface FitlioService {
     List<FitlioDto> getAllFitlio();
 
     // найти тренировку
-    FitlioDto getFitlioById(Long fitlioId);
 
     // отредактировать (обновить) тренировку
 

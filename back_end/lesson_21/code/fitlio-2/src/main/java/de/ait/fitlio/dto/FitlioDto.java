@@ -1,7 +1,6 @@
 package de.ait.fitlio.dto;
 
 import de.ait.fitlio.model.Fitlio;
-import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -19,23 +18,19 @@ public class FitlioDto {
     private Long id;
     private String title;
     private String description;
-    private Integer timeMinute;
-    private Integer timeHour;
-    @Schema(description = "Date of training", example = "2024-03-02")
-    private String date;
-    @Schema(description = "Lost calories", example = "250")
-    private Integer calorie;
-    @Schema(description = "Distance", example = "1500")
-    private Integer distance;
-    @Schema(description = "Type of training - POWER, GENERAL,...", example = "CARDIO")
+    private int timeMinute;
+    private int timeHour;
+    private LocalDate date;
+    private int calorie;
+    private int distance;
     private String fitType;
 
     public static FitlioDto from(Fitlio fitlio){
         return FitlioDto.builder()
                 .id(fitlio.getId())
+                .date(fitlio.getDate())
                 .title(fitlio.getTitle())
                 .description(fitlio.getDescription())
-                .date(fitlio.getDate().toString())
                 .timeMinute(fitlio.getTimeMinute())
                 .timeHour(fitlio.getTimeHour())
                 .calorie(fitlio.getCalorie())
