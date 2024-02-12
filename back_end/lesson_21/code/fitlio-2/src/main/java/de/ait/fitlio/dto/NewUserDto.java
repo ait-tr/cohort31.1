@@ -9,6 +9,10 @@ import lombok.Data;
 
 @Data
 public class NewUserDto {
+    @NotNull
+    @Schema(description = "User nickname", example = "John Donn")
+    private String name;
+
     @Email
     @NotNull
     @Schema(description = "User email", example = "user@mail.com")
@@ -18,9 +22,5 @@ public class NewUserDto {
     @Pattern(regexp = "^(?=.*[A-Za-z])(?=.*\\d)(?=.*[@#$%^&+=!])(?=\\S+$).{8,}$")
     @Schema(description = "User password", example = "Qwerty007!")
     private String password;
-
-    @NotNull
-    @Schema(description = "User nickname", example = "User007")
-    private String name;
 
 }

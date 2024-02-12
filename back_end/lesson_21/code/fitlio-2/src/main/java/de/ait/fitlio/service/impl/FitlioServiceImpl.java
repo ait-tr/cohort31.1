@@ -7,6 +7,8 @@ import de.ait.fitlio.repository.FitlioRepository;
 import de.ait.fitlio.service.FitlioService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+
+import java.time.LocalDate;
 import java.util.List;
 
 import static de.ait.fitlio.dto.FitlioDto.from;
@@ -23,12 +25,12 @@ public class FitlioServiceImpl implements FitlioService {
         Fitlio fitlio = Fitlio.builder()
                 .title(newFitlio.getTitle())
                 .description(newFitlio.getDescription())
-                .date(newFitlio.getDate())
-                .fitType(newFitlio.getFitType())
+                .date(LocalDate.parse(newFitlio.getDate()))
                 .timeMinute(newFitlio.getTimeMinute())
                 .timeHour(newFitlio.getTimeHour())
                 .calorie(newFitlio.getCalorie())
                 .distance(newFitlio.getDistance())
+                .fitType(newFitlio.getFitType())
                 .build();
 
         fitlioRepository.save(fitlio);

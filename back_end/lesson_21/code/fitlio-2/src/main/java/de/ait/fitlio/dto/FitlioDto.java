@@ -18,17 +18,17 @@ public class FitlioDto {
     private Long id;
     private String title;
     private String description;
-    private int timeMinute;
-    private int timeHour;
-    private LocalDate date;
-    private int calorie;
-    private int distance;
+    private Integer timeMinute;
+    private Integer timeHour;
+    private String date;
+    private Integer calorie;
+    private Integer distance;
     private String fitType;
 
     public static FitlioDto from(Fitlio fitlio){
         return FitlioDto.builder()
                 .id(fitlio.getId())
-                .date(fitlio.getDate())
+                .date(fitlio.getDate().toString())
                 .title(fitlio.getTitle())
                 .description(fitlio.getDescription())
                 .timeMinute(fitlio.getTimeMinute())

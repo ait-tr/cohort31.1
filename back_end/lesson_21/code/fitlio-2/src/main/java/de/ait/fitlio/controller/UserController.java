@@ -18,6 +18,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RequiredArgsConstructor
@@ -25,6 +26,7 @@ import org.springframework.web.bind.annotation.RestController;
         @Tag(name = "Users")
 )
 @RestController
+@RequestMapping("/api/user")
 public class UserController {
 
     private final UserService userService;
@@ -32,11 +34,11 @@ public class UserController {
     @Operation(summary = "Регистрация пользователя", description = "Доступно всем. По умолчанию роль - USER")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "201",
-                    description = "Пользователь зарегистрирован",
+                    description = "User added",
                     content = @Content(mediaType = "application/json",
                             schema = @Schema(implementation = UserDto.class))),
             @ApiResponse(responseCode = "400",
-                    description = "Ошибка валидации",
+                    description = "Validation error",
                     content = @Content(mediaType = "application/json",
                             schema = @Schema(implementation = ValidationErrorsDto.class))),
             @ApiResponse(responseCode = "409",
@@ -45,7 +47,7 @@ public class UserController {
                             schema = @Schema(implementation = StandardResponseDto.class))),
     })
     @PostMapping("/addUser")
-    public ResponseEntity<UserDto> register(@RequestBody @Valid NewUserDto newUser) {
+    public ResponseEntity<UserDto> addUser(@RequestBody @Valid NewUserDto newUser) {
         return ResponseEntity
                 .status(HttpStatus.CREATED)
                 .body(userService.addUser(newUser));

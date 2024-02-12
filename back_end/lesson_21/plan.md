@@ -61,7 +61,7 @@
 *     Maven, pom.xml - конфигурация приложения
 *     Введение в Spring - фреймворк, Dependency Injection (DI), Inversion of Control (отдаем управление приложением фреймворку)
 *     Аннотации Spring (Lombok) - позволяют включать стандартные куски кода одним словом @...
-*     Spring Boot - cовокупность библиотек для разработки и запуска приложения в сети Интернет и с СУБ
+*     Spring Boot - cовокупность библиотек для разработки и запуска приложения в сети Интернет (WEB-server Tomcat) и с СУБД
 *     MVC - model-view-controller, шаблонизаторы Freemarker, Thymeleaf
 *     Spring Data JPA - Java Persistence API библиотека для подключения к СУБД, предоствавлят интерфейс и его методы CRUD (create, read, update, delete)
 *     REST API - свод правил и рекомендаций для разработки endpoint (клиент-сервер) по протоколу HTTP, методы GET, POST, PUT, DELETE
@@ -69,6 +69,10 @@
     Осталось на текущую неделю:
 * Введение в Spring Security
 * Spring Security для REST API
+
+Популярные WEB-серверы:
+- Apache
+- Nginx
 
 2. Разработали приложение Fitlio
     - создали приложение, в котором есть две сущности(entity):
@@ -102,8 +106,9 @@
         - протестировать "вручную" работу api
       - делаем запросы из Swagger
       - разбираемся с validation и аннотациями для Swagger
-2. Spring Security - см. раздел теория
-3. Пробуем подключить Spring Security 
+   
+2. **Spring Security** - см. раздел теория
+
 
 
 

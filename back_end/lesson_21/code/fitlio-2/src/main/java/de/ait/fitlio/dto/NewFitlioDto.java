@@ -25,23 +25,24 @@ public class NewFitlioDto {
     private String description;
 
     @Schema(description = "minutes of training, duration", example = "15")
-    @NotEmpty
-    private int timeMinute;
+    @Min(1)
+    private Integer timeMinute;
     @Schema(description = "hours of training, duration", example = "1")
-    @NotEmpty
-    private int timeHour;
+    @Min(0)
+    private Integer timeHour;
+
     @Schema(description = "date", example = "2024-02-02")
     @Pattern(regexp = "^(?:(?:19|20)\\d\\d)-(?:0[1-9]|1[0-2])-(?:0[1-9]|1\\d|2\\d|3[0-1])$")
-    private LocalDate date;
+    private String date;
+
     @Schema(description = "burned calories ", example = "250")
-    @NotEmpty
-    private int calorie;
+    @Min(1)
+    private Integer calorie;
     @Schema(description = "distance in meters ", example = "5000")
-    @NotEmpty
-    private int distance; // будем округлять до целого
+    @Min(1)
+    private Integer distance; // будем округлять до целого
+
     @Schema(description = "type of exercises ", example = "CARDIO")
     private Fitlio.FitType fitType; // может быть String
-
-
 
 }
