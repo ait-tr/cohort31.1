@@ -1,0 +1,18 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "./code/users/usersSlice.ts",
+    "./code/users/types.ts",
+    "./code/users/selectors.ts",
+    "./code/pages/Users/Users.tsx",
+    "./code/pages/Users/styles.ts",
+    "./code/pages/Users/index.ts",
+    "./code/pages/Home/styles.ts",
+    "./code/pages/Home/index.ts",
+    "./code/pages/Home/Home.tsx"
+  ],
+  "video": "",
+  "etc": ""
+}

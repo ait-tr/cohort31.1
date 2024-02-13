@@ -1,0 +1,20 @@
+package ait.generic;
+
+import ait.generic.utils.JsonWrapper2;
+
+public class JsonWrapper2Appl {
+    public static void main(String[] args) {
+//        JsonWrapper2<Integer> wrapper1 = new JsonWrapper2<>(10);
+//        System.out.println(wrapper1);
+//        Integer a = wrapper1.getValue();
+//        System.out.println(a);
+        JsonWrapper2<String> wrapper2 = new JsonWrapper2<>("ten");
+        System.out.println(wrapper2);
+        String b = wrapper2.getValue();
+        System.out.println(b);
+        JsonWrapper2<StringBuilder> wrapper3 = new JsonWrapper2<>(new StringBuilder("ten"));
+        System.out.println(wrapper3);
+        StringBuilder c = wrapper3.getValue();
+        System.out.println(c);
+    }
+}

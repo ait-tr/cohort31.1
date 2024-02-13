@@ -1,0 +1,39 @@
+main {
+  height: 200vh;
+}
+
+ul {
+  list-style-type: none;
+}
+/* твой код */
+
+.navbar {
+  background-color: rgb(102,102,102);
+  /* padding: 10px; */
+  height: 60px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.nav-elements {
+  display: flex;
+  gap: 20px;
+}
+
+.link-item a {
+  color: white;
+  font-size: 22px;
+  font-family: "NarrowNews";
+  /* white-space запретить перенос по словам */
+  /* white-space: nowrap; */
+  &:hover {
+    color: lightgrey;
+  }
+}
+
+@font-face {
+  font-family: "NarrowNews"; 
+  src: url("./fonts/ClanOT-NarrowNews.ttf") format("truetype"); 
+  font-style: normal; 
+  font-weight: normal; 
+  }

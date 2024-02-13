@@ -1,0 +1,16 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+"code/dz20230922_dz1/src/Main.java",
+"code/dz20230922_dz2/src/Main.java",
+"code/dz20230922_dz3/src/Account.java",
+"code/dz20230922_dz3/src/AccountCreateException.java",
+"code/dz20230922_dz3/src/AccountFormatException.java",
+"code/dz20230922_dz3/src/Main.java",
+"code/dz20230922_dz3/src/Main2.java",
+"code/dz20230922_dz3/src/WrongAccountCountryCodeException.java"
+   ],
+  "video": ""
+}

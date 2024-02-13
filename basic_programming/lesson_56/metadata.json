@@ -1,0 +1,15 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+"code/demo20231004_1/src/Car.java",
+"code/demo20231004_1/src/Person.java",
+"code/demo20231004_1/src/ReaderObj.java",
+"code/demo20231004_1/src/WriterObj.java",
+"code/dz20231002_1/src/FileType.java",
+"code/dz20231002_1/src/Main.java",
+"code/dz20231002_1/src/Main1.java",
+"code/dz20231004_1/src/Main.java"],
+  "video": ""
+}

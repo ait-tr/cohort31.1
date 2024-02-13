@@ -1,0 +1,17 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+   "code/hw_10/ConvertorFtoC.java",
+   "code/hw_10/Person.java",
+   "code/practice/ArrayMethod2.java",
+   "code/practice/ArrayMethod.java",
+   "code/practice/Calculator.java",
+   "code/practice/Letters.java",
+   "code/practice/Pifagor.java"
+
+  ],
+
+  "video": ""
+}
