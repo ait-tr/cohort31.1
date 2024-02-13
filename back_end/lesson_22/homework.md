@@ -1,16 +1,15 @@
 ## Task 1
-Make endpoints to get a list of users and a list of workouts.
+Modify the controller taking into account new endpoints
 
-## Task 2.
-Add/translate annotations for Swagger.
-Test the operation of all endpoints using Swagger.
+## Task 2
+What training reports will we show?
 
 
 ===================================================
 
 ## Задание 1
-Сделать endpoints для получения списка пользователей и списка тренировок.
+Доработать контроллер с учетом новых endpoints
 
-## Задание 2.
-Дописать/перевести аннотации для Swagger.
-Протестировать работу всех endpoints с помощью Swagger.
+## Задание 2 
+Какие отчеты о тренировках будем показывать?
+
