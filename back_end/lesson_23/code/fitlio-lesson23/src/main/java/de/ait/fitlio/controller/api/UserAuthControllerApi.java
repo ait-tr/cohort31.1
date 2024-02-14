@@ -30,7 +30,7 @@ public interface UserAuthControllerApi {
                     content = {
                             @Content(mediaType = "application/json", schema = @Schema(implementation = UserDto.class))
                     }),
-            @ApiResponse(responseCode = "400", description = "User with this email already exists",
+            @ApiResponse(responseCode = "401", description = "User with this email already exists",
                     content = {
                             @Content(mediaType = "application/json", schema = @Schema(implementation = ErrorResponse.class))
                     }),

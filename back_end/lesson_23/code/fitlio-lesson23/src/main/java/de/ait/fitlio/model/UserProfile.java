@@ -29,28 +29,34 @@ public class UserProfile {
         if(height == null){
             height = 170;
         }
+        if(firstName == null){
+            firstName = "First name";
+        }
+        if(lastName == null){
+            lastName = "Last name";
+        }
     }
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(columnDefinition = "varchar(50) 'Fist name'")
+    @Column(columnDefinition = "varchar(50)")
     private String firstName;
 
-    @Column(columnDefinition = "varchar(50) 'Last name'")
+    @Column(columnDefinition = "varchar(50)")
     private String lastName;
 
     @Column
     private Boolean gender = true;
     @Column
-    private LocalDate dateOfBirth; // возраст вычисляем через Chronounits
+    private LocalDate dateOfBirth; // возраст вычисляем через ChronosUnits
     @Column
     private Double weight; // вес
     @Column
     private Integer height; // рост
     @Column
-    private Boolean allowance; // наличие допуска
+    private Boolean allowance = true; // наличие допуска
 
     @OneToOne(cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     @JoinColumn(name = "user_id")
