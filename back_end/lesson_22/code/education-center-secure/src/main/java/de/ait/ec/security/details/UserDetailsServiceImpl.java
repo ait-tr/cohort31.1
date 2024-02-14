@@ -39,6 +39,6 @@ public class UserDetailsServiceImpl implements UserDetailsService {
         User user = usersRepository.findByEmail(email)
                 .orElseThrow(() -> new UsernameNotFoundException("User with email <" + email + "> not found"));
 
-        return new AuthenticatedUser(user);
+        return new AuthenticatedUser(user); // обращаемся к классу AuthenticatedUser, создаем нового
     }
 }

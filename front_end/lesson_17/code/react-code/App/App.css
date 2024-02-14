@@ -1,9 +1,0 @@
-.App {
-  display: flex;
-  flex-direction: column;
-}
-
-.button-container {
-  width: fit-content;
-  margin-bottom: 10px;
-}

@@ -31,6 +31,7 @@ public class UsersServiceImpl implements UsersService {
     @Override
     public UserDto register(NewUserDto newUser) {
 
+        // проверяем, что такого пользователя с таким email-ом еще нет
         if (usersRepository.existsByEmail(newUser.getEmail())) {
             throw new RestException(HttpStatus.CONFLICT,
                     "User with email <" + newUser.getEmail() + "> already exists");

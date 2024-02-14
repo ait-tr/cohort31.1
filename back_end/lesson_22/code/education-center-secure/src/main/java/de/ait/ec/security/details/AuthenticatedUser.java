@@ -43,16 +43,15 @@ public class AuthenticatedUser implements UserDetails {
         return Collections.singleton(new SimpleGrantedAuthority(user.getRole().toString()));
 
     }
-
     @Override
     public String getPassword() { // в качестве пароля берем наш хэш
         return user.getPassword();
-    }
+    } // берем пароль от User
 
     @Override
     public String getUsername() { // в качестве имени пользователя в нашем случае выступает email
         return user.getEmail();
-    }
+    } // берем email от User
 
     @Override
     public boolean isAccountNonExpired() { // аккаунт не просрочен?
