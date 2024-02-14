@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class UserAuthController implements UserAuthControllerApi{
 
-    UserService userService;
+    private final UserService userService;
 
     @Override
     public UserDto registerUser(NewUserDto createUser) {

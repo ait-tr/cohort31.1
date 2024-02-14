@@ -4,26 +4,31 @@ POST http://localhost:8080/api/fitlio
 Content-Type: application/json
 
 {
-  "title": "Morning jogging",
-  "description": "1500 meters",
+  "title": "Evening walking",
+  "description": "500 meters",
   "date": "2024-03-02",
-  "timeMinute": 45,
+  "timeMinute": 35,
   "timeHour": 0,
-  "calorie": 250,
-  "distance": 1500,
-  "fitType": "CARDIO"
+  "calorie": 150,
+  "distance": 850,
+  "fitType": "GENERAL"
 }
 
+### Логин на сайт (новый, с шифрацией пароля)
+POST localhost:8080/api/login
+Content-Type: application/x-www-form-urlencoded
+
+username=fedor@gmail.com&password=Qwerty007!
 
 ### Регистрация пользователя
 
-POST localhost:8080/api/user/addUser
+POST localhost:8080/api/auth/register
 Content-Type: application/json
 
 {
-  "name": "Fedor",
-  "email": "fedor@gmail.com",
-  "password": "Qwerty007!"
+  "name": "Nick",
+  "email": "nick@gmail.com",
+  "password": "Nikolas2024!"
 }
 
 ### Get list of trainings

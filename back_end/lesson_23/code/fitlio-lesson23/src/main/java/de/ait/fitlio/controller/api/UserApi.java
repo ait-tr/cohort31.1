@@ -34,4 +34,5 @@ public interface UserApi {
     @GetMapping("/me")
     @PreAuthorize("isAuthenticated()")
     UserDto getMyProfile(@AuthenticationPrincipal AuthenticatedUser user); // получение профайла пользователя
+
 }

@@ -16,23 +16,41 @@ import java.time.LocalDate;
 @ToString
 @Table(name = "fit_users_profile")
 public class UserProfile {
+
+    // Предварительный обработчик для установки значения по умолчанию перед сохранением
+    @PrePersist
+    public void prePersist(){
+        if(dateOfBirth == null) {
+            dateOfBirth = LocalDate.now().minusYears(40);
+        }
+        if (weight == null) {
+            weight = 65.0;
+        }
+        if(height == null){
+            height = 170;
+        }
+    }
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Column(length = 50, nullable = false)
+
+    @Column(columnDefinition = "varchar(50) 'Fist name'")
     private String firstName;
-    @Column(length = 100, nullable = false)
+
+    @Column(columnDefinition = "varchar(50) 'Last name'")
     private String lastName;
+
     @Column
-    private boolean gender;
+    private Boolean gender = true;
     @Column
     private LocalDate dateOfBirth; // возраст вычисляем через Chronounits
     @Column
-    private double weight; // вес
+    private Double weight; // вес
     @Column
-    private int height; // рост
+    private Integer height; // рост
     @Column
-    private boolean allowance; // наличие допуска
+    private Boolean allowance; // наличие допуска
 
     @OneToOne(cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     @JoinColumn(name = "user_id")

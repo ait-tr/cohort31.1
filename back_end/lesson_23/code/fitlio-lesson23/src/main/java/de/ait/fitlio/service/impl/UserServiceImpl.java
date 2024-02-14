@@ -35,8 +35,9 @@ public class UserServiceImpl implements UserService {
         userRepository.save(user);
         // создаем сразу новый UserProfile для пользователя
         UserProfile userProfile = userProfileService.createUserProfileForUser(user);
-        user.setUserProfile(userProfile);
-        return from(user);
+        user.setUserProfile(userProfile); // пользователь получает свой профиль
+        User savedUser = userRepository.save(user); // сохранили еще раз user c его профилем
+        return from(savedUser);
     }
 
     @Override
