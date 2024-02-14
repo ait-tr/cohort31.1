@@ -29,28 +29,7 @@ public class UserController {
 
     private final UserService userService;
 
-    @Operation(summary = "User registration", description = "Available for all USERS")
-    @ApiResponses(value = {
-            @ApiResponse(responseCode = "201",
-                    description = "User is successfully added",
-                    content = @Content(mediaType = "application/json",
-                            schema = @Schema(implementation = UserDto.class))),
-            @ApiResponse(responseCode = "400",
-                    description = "Validation error",
-                    content = @Content(mediaType = "application/json",
-                            schema = @Schema(implementation = ValidationErrorsDto.class))),
-            @ApiResponse(responseCode = "409",
-                    description = "User with this e-mail is already exist",
-                    content = @Content(mediaType = "application/json",
-                            schema = @Schema(implementation = StandardResponseDto.class))),
-    })
-    @PostMapping
-    public ResponseEntity<UserDto> add(@RequestBody @Valid NewUserDto newUser) {
-        return ResponseEntity
-                .status(HttpStatus.CREATED)
-                .body(userService.addUser(newUser));
-    }
-    @Operation(summary = "Get list of users", description = "Available for admin only")
+    @Operation(summary = "Get list of users", description = "Available for ADMIN only")
     @GetMapping
     public ResponseEntity<List<UserDto>> getAllUsers() {
         return ResponseEntity

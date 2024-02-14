@@ -32,6 +32,8 @@ public class SecurityConfig {
     public static final String LOGOUT_ENDPOINT = "/api/logout";
 
     private static final String[] AUTH_WHITELIST = {
+            "/api/v1/auth/**",
+            "/v3/api-docs/**",
             "/swagger-ui/**",
             "/swagger-ui.html",
             "/api/user/me/**",

@@ -6,7 +6,8 @@ import de.ait.fitlio.dto.UserDto;
 import java.util.List;
 
 public interface UserService {
-    UserDto addUser(NewUserDto newUser);
+    UserDto saveUser(NewUserDto newUser);
 
     List<UserDto> getAllUsers();
+
 }
