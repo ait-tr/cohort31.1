@@ -16,37 +16,32 @@ import java.time.LocalDate;
 @ToString
 @Table(name = "fit_users_profile")
 public class UserProfile {
-
-    // Предварительный обработчик для установки значения по умолчанию перед сохранением
     @PrePersist
     public void prePersist(){
-        if(dateOfBirth == null) {
+        if (dateOfBirth==null) {
             dateOfBirth = LocalDate.now().minusYears(40);
         }
-        if (weight == null) {
-            weight = 65.0;
+        if (weight==null){
+            weight=65.0;
         }
-        if(height == null){
-            height = 170;
+        if (height==null){
+            height=170;
         }
-        if(firstName == null){
+        if(firstName == null) {
             firstName = "First name";
         }
+
         if(lastName == null){
             lastName = "Last name";
         }
     }
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
-    @Column(columnDefinition = "varchar(50)")
+    @Column( columnDefinition = "varchar(50)")
     private String firstName;
-
-    @Column(columnDefinition = "varchar(50)")
+    @Column( columnDefinition = "varchar(100)")
     private String lastName;
-
     @Column
     private Boolean gender = true;
     @Column

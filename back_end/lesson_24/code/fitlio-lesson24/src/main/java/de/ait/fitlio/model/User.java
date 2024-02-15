@@ -2,6 +2,7 @@ package de.ait.fitlio.model;
 
 import jakarta.persistence.*;
 import lombok.*;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor

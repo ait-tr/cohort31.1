@@ -9,6 +9,7 @@ import de.ait.fitlio.repository.UserRepository;
 import de.ait.fitlio.service.UserProfileService;
 import de.ait.fitlio.service.UserService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -25,22 +26,25 @@ public class UserServiceImpl implements UserService {
     private final UserRepository userRepository;
     private final UserProfileService userProfileService;
     private final PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
+
     @Override
+
     public UserDto saveUser(NewUserDto newUser) {
-        if (userRepository.existsByEmail(newUser.getEmail())) {
-            throw new RestException(HttpStatus.CONFLICT,
-                    "User with email <" + newUser.getEmail() + "> already exists");
+
+        if(userRepository.existsByEmail(newUser.getEmail())){
+            throw new RestException(HttpStatus.CONFLICT, "User with email <" + newUser.getEmail() + "> already exists");
         }
-        User user= User.builder()
+
+        User user = User.builder()
                 .name(newUser.getName())
                 .email(newUser.getEmail())
                 .password(passwordEncoder.encode(newUser.getPassword())) // шифрование поля
                 .role(User.Role.USER) // присвоили роль
                 .build();
         userRepository.save(user);
-        // создаем сразу новый UserProfile для пользователя
+        //создаем новый профиль для нового пользователя
         UserProfile userProfile = userProfileService.createUserProfileForUser(user);
-        user.setUserProfile(userProfile); // пользователь получает свой профиль
+        user.setUserProfile(userProfile);
         User savedUser = userRepository.save(user); // сохранили еще раз user c его профилем
         return from(savedUser);
     }
