@@ -24,13 +24,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 })
 @RequestMapping("/api/auth")
 public interface UserAuthControllerApi {
+
     @Operation(summary = "Register new user", description = "Register new user in application with default role (USER). Available for all")
     @ApiResponses(value = {
-            @ApiResponse(responseCode = "201", description = "User details",
+            @ApiResponse(responseCode = "201", description = "User Details",
                     content = {
                             @Content(mediaType = "application/json", schema = @Schema(implementation = UserDto.class))
                     }),
-            @ApiResponse(responseCode = "401", description = "User with this email already exists",
+            @ApiResponse(responseCode = "409", description = "User with this email already exists",
                     content = {
                             @Content(mediaType = "application/json", schema = @Schema(implementation = ErrorResponse.class))
                     }),
