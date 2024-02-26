@@ -7,7 +7,7 @@
     "code/QA31_Phonebook/src/test/java/com/phonebook/tests/HomePageTests.java",
     "code/QA31_Phonebook/src/test/java/com/phonebook/tests/CreateAccountTests.java",
     "code/QA31_Phonebook/src/test/java/com/phonebook/tests/LoginTests.java",
-    "code/QA31_Phonebook/src/test/java/com/phonebook/tests/AddNewContactTests.java",
-    "code/QA31_Phonebook/src/test/java/com/phonebook/tests/RemoveContactTests.java"
+    "code/QA31_Phonebook/src/test/java/com/phonebook/tests/AddContactTests.java",
+    "code/QA31_Phonebook/src/test/java/com/phonebook/tests/DeleteContactTests.java"
   ]
 }
