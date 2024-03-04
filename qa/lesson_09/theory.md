@@ -48,7 +48,7 @@ Allpairs download https://www.satisfice.com/download/allpairs
 
 [TestNG](https://docs.google.com/presentation/d/1MaYUXf4wIXKPgdOq1cG9s8yl4pYZvg4B/edit?usp=sharing&ouid=116447005932578256378&rtpof=true&sd=true)
 
-[TestNG documentation](https://testng.org/doc/documentation-main.html)
+[TestNG documentation](https://testng.org/#_testng_documentation)
 
 _gradle clean qa -Psuite1_
 
