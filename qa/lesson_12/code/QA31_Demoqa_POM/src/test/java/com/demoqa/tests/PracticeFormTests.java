@@ -23,6 +23,10 @@ public class PracticeFormTests extends TestBase{
                 .typeOfDate("16 August 1987")
                 .addSubjects(new String[]{"Maths","Chemistry","English"})
                 .selectHobby(new String[]{"Sports","Music"})
-                .uploadFile("C:/Tools/1.jpg");
+                .uploadFile("C:/Tools/1.jpg")
+                .selectSate("NCR")
+                .selectCity("Delhi")
+                .submit()
+                .verifyStudentFormTitle("Thanks for submitting the form");
     }
 }
