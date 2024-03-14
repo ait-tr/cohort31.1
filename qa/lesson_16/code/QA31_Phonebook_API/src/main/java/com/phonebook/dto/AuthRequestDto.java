@@ -1,4 +1,4 @@
-package dto;
+package com.phonebook.dto;
 
 import lombok.Builder;
 import lombok.Getter;
@@ -9,7 +9,8 @@ import lombok.ToString;
 @Getter
 @ToString
 @Builder
-public class AuthResponseDto {
+public class AuthRequestDto {
 
-    private String token;
+    private String username;
+    private String password;
 }

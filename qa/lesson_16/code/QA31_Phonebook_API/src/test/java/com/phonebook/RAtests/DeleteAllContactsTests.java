@@ -1,4 +1,4 @@
-package RAtests;
+package com.phonebook.RAtests;
 
 import org.testng.annotations.Test;
 

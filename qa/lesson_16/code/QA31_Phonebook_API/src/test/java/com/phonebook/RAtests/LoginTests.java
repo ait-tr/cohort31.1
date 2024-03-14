@@ -1,4 +1,4 @@
-package RAtests;
+package com.phonebook.RAtests;
 
 import com.phonebook.dto.AuthRequestDto;
 import com.phonebook.dto.AuthResponseDto;

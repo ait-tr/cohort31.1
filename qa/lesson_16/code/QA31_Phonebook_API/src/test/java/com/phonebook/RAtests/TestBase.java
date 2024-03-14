@@ -1,4 +1,4 @@
-package RAtests;
+package com.phonebook.RAtests;
 
 import io.restassured.RestAssured;
 import org.testng.annotations.BeforeMethod;

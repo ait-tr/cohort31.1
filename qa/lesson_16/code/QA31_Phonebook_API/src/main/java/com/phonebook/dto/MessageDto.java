@@ -1,4 +1,4 @@
-package dto;
+package com.phonebook.dto;
 
 import lombok.Builder;
 import lombok.Getter;
@@ -9,9 +9,7 @@ import lombok.ToString;
 @Getter
 @ToString
 @Builder
-public class ErrorDto {
+public class MessageDto {
 
-    private int status;
-    private String error;
-    private Object message;
+    private String message;
 }

@@ -1,4 +1,4 @@
-package RAtests;
+package com.phonebook.RAtests;
 
 import com.phonebook.dto.AllContactsDto;
 import com.phonebook.dto.ContactDto;
